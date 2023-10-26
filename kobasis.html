@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" sizes="128x128"  href="/img/itt-logo-3.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Brex-Theme"/>
+    <!-- description -->
+    <meta
+            name="description"
+            content="Kudi is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose agency and portfolio HTML5 template."/>
+    <!-- keywords -->
+    <meta
+            name="keywords"
+            content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, parallax, photography, personal"/>
+    <title>İTT</title>
+    <!-- Bootstrap 4.1.3 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="css/plugins/normalize.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/plugins/animate.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/plugins/magnific-popup.css">
+    <!-- Font Awesome 4.7 -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <!-- Linea-basic -->
+    <link rel="stylesheet" href="css/plugins/linea-basic.css">
+    <!-- Google Font -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900"
+            rel="stylesheet">
+    <!-- Main Css-->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            height: 100%;
+        }
+        .calismalarimiz__container {
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            border: 1px solid #eeeded;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        }
+        .calismalarimiz__container ul{
+            padding: 15px 0 15px 0;
+
+        }
+        .calismalarimiz__container ul li {
+            text-align: left;
+            list-style: none;
+            padding: 13px 0 13px 10px;
+            color: #726d6d;
+            border-bottom: 1px solid rgba(102,112,147,.2);
+        }
+        .calismalarimiz__container ul li i {
+            margin-right: 3px;
+            color: #4a4747;
+        }
+
+
+        .topnav a {
+            float: left;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+        .dropdown .dropbtn {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            border-radius: 12px;
+
+            background: #FFFFFF;
+            margin-left: -10px;
+            display: none;
+            position: absolute;
+            min-width: 180px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            font-size: 12px;
+            margin-top: 10px;
+            float: none;
+            color: #c7d3dd;
+            padding: 5px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .topnav a:hover, .dropdown:hover .dropbtn {
+            color: #2AAFC0;
+        }
+
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child), .dropdown .dropbtn {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .topnav.responsive .dropdown {float: none;}
+            .topnav.responsive .dropdown-content {position: relative;}
+            .topnav.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+<!-- Page Loading -->
+<div class="se-pre-con"></div>
+
+<!-- ==== Start Navbar ==== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dar fixed-top">
+    <div class="container">
+        <!-- Brand-->
+<!--                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>-->
+        <a href="index.htm">
+            <img  src="img/itt-logo-3.svg" width="70" height="70" style="cursor: pointer" alt="logo">
+        </a>
+
+        <!-- Button -->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.htm">Anasayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mt-1">
+                    <div class="topnav  " id="myTopnavw">
+                        <div class="dropdown  nav-item">
+                            <button class="dropbtn nav-link">Projeler
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content nav-link ">
+                                <a class="" href="kobasis.html">KOBASİS</a>
+                                <a class="" href="abasis.html">ABASİS</a>
+                                <a class="" href="ittaid.html">İTT AİD</a>
+                                <a class="" href="ittsar.html">İİT SAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item mt-1">
+                    <div class="topnav " id="myTopnav">
+                        <div class="dropdown ">
+                            <button class="dropbtn nav-link">Geliştirici
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content mb-5">
+                                <a class="mb-3 pl-3" href="https://stackshare.io/itt-teknoloji-as/itt-teknoloji">Kullandığımız Teknolojiler</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="iletişim.html">İletişim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:info@ittyazilim.com">
+                        Bize Ulaşın
+                        <i class="ml-1 fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- ==== End Navbar ==== -->
+
+<!-- ==== Start Slider ==== -->
+<!--<section class="slider" id="slider">-->
+<!--    <div class="content text-center">-->
+<!--        <h1>iTT Technology</h1>-->
+<!--        <p>ITT, istikrarlı, ölçeklenebilir ve gelişmiş ürünler oluşturmak için aradığınız uzmanlığı sunar.-->
+<!--        </p>-->
+<!--        <a href="#calismalarimiz" class="btn">Başalyalım</a>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Particels JS &ndash;&gt;-->
+<!--    <div id="particles-js" class="particels"></div>-->
+<!--</section>-->
+<!-- ==== End Slider ==== -->
+
+<!-- ==== Start About Us ==== -->
+<!--<section class="about-us" id="calismalarimiz">-->
+<!--    <div class="container text-center">-->
+<!--        <div class="heading">-->
+<!--            <i class="fa fa-snowflake-o" aria-hidden="true"></i>-->
+<!--            <h2>Çalışm<span>alarımız</span></h2>-->
+<!--        </div>-->
+<!--        <br>-->
+
+<!--        <div class="row">-->
+<!--            &lt;!&ndash; Box-1 &ndash;&gt;-->
+<!--            <div class="col-md-4">-->
+<!--                <div class="box">-->
+<!--                    <span class="icon icon-basic-lightbulb"></span>-->
+<!--                    <div class="line m-auto"></div>-->
+<!--                    <h3>koBASİS</h3>-->
+<!--                    <p>Kolay Bağış Sistemi <br>-->
+<!--                        İnsani Yardım Kuruluşları için mobil - online nakdî bağış toplama sistemi..-->
+<!--                    </p>-->
+<!--                    <div class="calismalarimiz__container">-->
+<!--                        <ul>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-file-pdf"></i>-->
+<!--                                Ayrıntılı raporlama ekranları</li>-->
+<!--                            <li>-->
+<!--                                <i class="fad fa-phone"></i>-->
+<!--                                Mobil erişim</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-server"></i>-->
+<!--                                Hızlı ve güvenilir sistem</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-database"></i>-->
+<!--                                DERBİS ile kolay entegrasyon</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-hand-holding-heart"></i>-->
+<!--                                Bağışçı Memnuniyeti</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-street-view"></i>-->
+<!--                                Kullanıcı dostu arayüz</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-wrench"></i>-->
+<!--                                Tüm altyapı sistemleri ile kolay entegrasyon</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <!-- Box-2 -->
+<!--            <div class="col-md-4">-->
+<!--                <div class="box">-->
+<!--                    <span class="icon icon-basic-calendar"></span>-->
+<!--                    <div class="line m-auto"></div>-->
+<!--                    <h3>aBASİS</h3>-->
+<!--                    <p>Ayni Bağış Yönetim Sistemi <br>-->
+<!--                        İnsani yardım kuruluşları için ayni bağış yönetim sistemi.-->
+<!--                    </p>-->
+<!--                    <div class="calismalarimiz__container">-->
+<!--                        <ul>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-file-pdf"></i>-->
+<!--                                Ayrıntılı raporlama ekranları</li>-->
+<!--                            <li>-->
+<!--                                <i class="fad fa-phone"></i>-->
+<!--                                Mobil erişim</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-server"></i>-->
+<!--                                Hızlı ve güvenilir sistem</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-database"></i>-->
+<!--                                DERBİS ile kolay entegrasyon</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-hand-holding-heart"></i>-->
+<!--                                Bağışçı Memnuniyeti</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-street-view"></i>-->
+<!--                                Kullanıcı dostu arayüz</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-wrench"></i>-->
+<!--                                Tüm altyapı sistemleri ile kolay entegrasyon</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-warehouse"></i>-->
+<!--                                Depo Yönetimi</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-star-of-david"></i>-->
+<!--                                Stok takip sistemi</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-barcode"></i>-->
+<!--                                Barkod sistemi ile kolay takip</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+            <!-- Box-3 -->
+<!--            <div class="col-md-4">-->
+<!--                <div class="box">-->
+<!--                    <span class="icon icon-basic-gear"></span>-->
+<!--                    <div class="line m-auto"></div>-->
+<!--                    <h3>ittAİD</h3>-->
+<!--                    <p>Sosyal yardım kuruluşları için genel amaçlı yönetim programı.</p>-->
+<!--                    <div class="calismalarimiz__container">-->
+<!--                        <ul>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-star"></i>-->
+<!--                                İnternet site entegrasyonu</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-video"></i>-->
+<!--                                Kurban takip ve bağışçıya videolu geri bildirim</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-server"></i>-->
+<!--                                Bağış bağlama otomasyonu</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-photo"></i>-->
+<!--                                Kampanya / proje yönetimi</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-map-marked"></i>-->
+<!--                                Kurum ihtiyaçlarına özel geliştirmeler</li>-->
+<!--                            <li>-->
+<!--                                <i class="fas fa-street-view"></i>-->
+<!--                                Yetim, öğrenci, hafız sponsorluk takibi</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!-- ==== End About Us ==== -->
+<!--<section class="get-started">-->
+<!--    <div class="container text-center">-->
+<!--        <div class="content">-->
+<!--            <span class="icon icon-basic-pencil-ruler-pen"></span>-->
+<!--            <h2>Kolay bağış sistemlerinin adresi</h2>-->
+<!--            <p>Derneklerin, vakıfların ve her türlü yardım kuruluşlarının kolaylıkla kullanabileceği-->
+<!--                <br>-->
+<!--                bağış sistemlerini sizlere sunuyoruz.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+
+<!-- ==== Start Services ==== -->
+<!--<section class="services" id="misyonvizyon">-->
+<!--    <div class="container text-center">-->
+<!--        <div class="heading">-->
+<!--            <span class="icon icon-basic-clubs"></span>-->
+<!--            <h2>MİSYONUMUZ <span>V</span>E<span> VİZYONUMUZ</span></h2>-->
+<!--            <p>“Dünya İyilikle Değişir” diyen tüm dernek, vakıf ve yardım kuruluşlarının yazlım ihiyaçlarına uygun çözümler sunuyoruz.-->
+<!--            </p>-->
+<!--        </div>-->
+
+<!--        <div class="row">-->
+<!--            <div class="col-lg-6">-->
+<!--                <div class="row">-->
+<!--                    &lt;!&ndash; Box-4 &ndash;&gt;-->
+<!--                    <div class="col-sm-12 wow fadeIn">-->
+<!--                        <div class="box" style="padding-bottom: 80px">-->
+<!--                            <span class="icon icon-basic-accelerator"></span>-->
+<!--                            <i class="bi bi-0-circle"></i>-->
+<!--                            <div class="line m-auto"></div>-->
+<!--                            <h3 class="mb-lg-2 mb-1">MİSYONUMUZ</h3>-->
+<!--                            <p>Ülkemiz ve Dünyadaki ihtiyaç sahiplerine maddi manevi yardım faaliyetlerinde bulunan, hayırseverlerden almış olduğu bağışları ihtiyaç sahiplerine ulaştıran sivil toplum kuruluşlarının ve çeşitli kurumların teknoloji ve yazılım alanındaki ihtiyaçlarına en etkili çözümü en iyi şekilde organize ederek ulaştırmaktır.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-6">-->
+<!--                <div class="row">-->
+<!--                    &lt;!&ndash; Box-4 &ndash;&gt;-->
+<!--                    <div class="col-sm-12 wow fadeIn">-->
+<!--                        <div class="box py-4">-->
+<!--                            <span class="icon icon-basic-bolt"></span>-->
+<!--                            <div class="line m-auto"></div>-->
+<!--                            <h3 class="mb-lg-2 mb-1">VİZYONUMUZ</h3>-->
+<!--                            <p>Sivil Toplum ve insani yardım alanlarında faaliyet gösteren kuruluşların yurtiçindeki ve yurtdışındaki koordinatörleri, partnerleri, kamu kurum ve kuruluşları ile iş birliği içerisinde, sağlıklı bir şekilde ihtiyaç duyduğu veri akış sisteminin oluşturulması, bu alandaki faaliyetlerinin yeni gelişen teknoloji ve imkanlarla desteklenmesi için gerekli çalışmayı yürütmek. Yeni teknolojileri araştırmak, geliştirmek ve uygulamak.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Image &ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- ==== End Services ==== -->
+
+<!-- ==== Start Get Started ==== -->
+<section class="get-started">
+    <div class="container text-center">
+        <div class="content">
+            <span class="icon icon-basic-cloud"></span>
+            <h2>Güvenliğin öncelikli olduğu yardım kuruluşlarına yeni nesil bağış sistemleri</h2>
+            <p>Nothing gives more pleasure than a properly working system…</p>
+        </div>
+    </div>
+</section>
+<!-- ==== End Clients ==== -->
+
+<!-- ==== Start Contact Us ==== -->
+<!-- ==== End Contact Us ==== -->
+
+<!-- ==== Start Footer ==== -->
+<footer class="footer">
+    <div class="container text-center ">
+
+        <div class="d-flex align-items-center justify-content-between">
+
+            <div class="logo">
+                <img src="img/itt-logo-3.svg" width="70" height="70" alt="">
+            </div>
+            <p>© İTT TECHNOLOGY
+            </p>
+            <div class="social-icons">
+                <a href="mailto:info@ittyazilim.com">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</footer>
+<!-- ==== End Footer ==== -->
+
+<!-- ==== JavaScript ==== -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap 4.1.3 -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+<!-- Isotope -->
+<script src="js/plugins/isotope.pkgd.min.js"></script>
+<script src="js/plugins/imagesloaded.pkgd.min.js"></script>
+<!-- Couner Up-->
+<script src="js/plugins/jquery.waypoints.min.js"></script>
+<script src="js/plugins/jquery.counterup.min.js"></script>
+<!-- Magnific Popup-->
+<script src="js/plugins/magnific-popup.min.js"></script>
+<!-- Wow Js Animations -->
+<script src="js/plugins/wow.min.js"></script>
+<!-- Particles JS-->
+<script src="js/plugins/particles.min.js"></script>
+<script src="js/plugins/app.js"></script>
+<!-- Modernizr -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<!-- Main Js -->
+<script src="js/main.js"></script>
+</body>
+</html>
