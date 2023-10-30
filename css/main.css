@@ -35,7 +35,7 @@ body {
 [1. Start Navbar]
 --------------------------------------------------*/
 .navbar {
-    background: linear-gradient(135deg, rgba(42, 36, 43, 0) 0%, rgba(42, 36, 43, 0) 100%);
+    background: #192b3c;;
     padding: 20px 0;
     border-bottom: 3px double rgba(255, 255, 255, 0.06);
 }
