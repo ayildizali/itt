@@ -144,7 +144,7 @@
                 }
             }
             .separator_wrapper{
-                margin-bottom: 15px;
+                margin-bottom: 25px;
             }
             .çizgi{
 
@@ -443,48 +443,8 @@
                 font-weight: 700;
             }
 
-            .thm-btn {
-                border: none;
-                display: inline-block;
-                vertical-align: middle;
-                outline: none;
-                font-size: 16px;
-                font-weight: 500;
-                color: #2a2833;
-                padding: 13px 41px;
-                border-radius: 5px;
-                -webkit-transition: background .4s ease, color .4s ease;
-                transition: background .4s ease, color .4s ease;
-                background-image: -webkit-gradient(linear, left top, right top, from(#ff4eb5), to(#ffa065));
-                background-image: linear-gradient(90deg, #ff4eb5 0%, #ffa065 100%);
-                position: relative;
-            }
-            .thm-btn:before {
-                content: '';
-                position: absolute;
-                top: 2px;
-                right: 2px;
-                bottom: 2px;
-                left: 2px;
-                border-radius: 5px;
-                background-color: #fff;
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                -webkit-transition: -webkit-transform .4s ease;
-                transition: -webkit-transform .4s ease;
-                transition: transform .4s ease;
-                transition: transform .4s ease, -webkit-transform .4s ease;
-            }
-            .thm-btn span {
-                position: relative;
-            }
-            .thm-btn:hover {
-                color: #fff;
-            }
-            .thm-btn:hover:before {
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-            }
+
+
 
             .post-pagination {
                 display: -webkit-box;
@@ -1149,12 +1109,7 @@
                 -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.03);
                 box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.03);
             }
-            .blog-one__image {
-                position: relative;
-                background-color: #2a2833;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-            }
+
             .blog-one__image > img {
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
@@ -1211,7 +1166,7 @@
             .blog-one .post-pagination {
                 margin-top: 40px;
             }
-            .blog-details .blog-one__single {
+            .blog-details .blog-one__single{
                 margin-bottom: 0;
             }
             .blog-details .blog-one__title {
@@ -1242,22 +1197,7 @@
                 font-weight: 500;
                 margin-bottom: 40px;
             }
-            .blog-details .share-block {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                justify-content: space-between;
-                padding: 50px;
-                border: 1px solid #efefef;
-                border-top: 0;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
-            }
+
             .blog-details .share-block .left-block p {
                 margin: 0;
                 color: #2a2833;
@@ -1575,10 +1515,7 @@
                 -webkit-box-shadow: 0px -1px 0px 0px #efefef;
                 box-shadow: 0px -1px 0px 0px #efefef;
             }
-            .site-footer__upper {
-                padding-top: 120px;
-                padding-bottom: 120px;
-            }
+
 
             .site-footer__bottom {
                 background-color: #fff9ff;
@@ -1667,7 +1604,28 @@
                 line-height: 1em;
                 margin-bottom: 40px;
             }
-
+            .site-footer{
+                position: relative;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                background-color: #192b3c;
+                -webkit-box-shadow: 0px -1px 0px 0px #efefef;
+                box-shadow: 0px -1px 0px 0px #efefef;
+            }
+            .site-footer__upper {
+                padding-top: 120px;
+                padding-bottom: 120px;
+            }
+            .footer-widget__title {
+                font-size: 18px;
+                font-weight: 500;
+                color: #FFFFFF;
+                width: 300px;
+                line-height: 1em;
+                margin-bottom: 40px;
+            }
             .footer-widget__links {
                 margin: 0;
                 margin-top: -5px;
@@ -1689,6 +1647,7 @@
                 color: #34B1C4;
             }
 
+
             .footer-widget__contact {
                 font-size: 16px;
                 font-weight: 400;
@@ -1701,9 +1660,7 @@
                 -webkit-transition: all .4s ease;
                 transition: all .4s ease;
             }
-            .footer-widget__contact a:hover {
-                color: #ff4eb5;
-            }
+
 
             .footer-widget__contact + .footer-widget__contact {
                 margin-top: 15px;
@@ -1937,7 +1894,7 @@
                 width: 61px;
                 height: 61px;
                 background-image: -webkit-gradient(linear, left top, right top, from(#34b1c4), color-stop(51%, #0a2e44));
-                background-image: linear-gradient(to right, #34b1c4 0%, #0a2e44 51%);
+                background-image: linear-gradient(to right, #34b1c4 0%, #0a2e44 51%, #34b1c4 100%);
                 background-size: 200% auto;
                 border-radius: 50%;
                 font-size: 22px;
@@ -2669,9 +2626,8 @@
         <nav class="navbar navbar-expand-lg  fixed-top">
             <div class="container">
                 <!-- Brand-->
-<!--                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>-->
                 <img src="img/itt-logo-3.svg" width="70" height="70" style="cursor: pointer" alt="logo">
-                <!-- Button -->
+
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -2717,7 +2673,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="iletişim.html">İletişim</a>
+                            <a class="nav-link" href="iletisim.html">İletişim</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="mailto:info@ittyazilim.com">
@@ -2772,7 +2728,7 @@
                         <div class="row">
 
                             <div class="col-sm-12 wow fadeIn">
-                                <div class="box py-4">
+                                <div class="box py-4" style="padding-bottom: 10px">
                                     <span class="icon icon-basic-bolt"></span>
                                     <div class="line m-auto"></div>
                                     <h3 class="mb-lg-2 mb-1">VİZYONUMUZ</h3>
@@ -2785,7 +2741,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class= "">
 
@@ -2846,7 +2801,7 @@
                     <!--begin fun-facts-box -->
                     <div class="definitionx col-md-2 fun-facts-box text-center wow fadeIn" data-wow-delay="0.15s">
 
-                        <img class="mb-4" src="img/icons8-design-50.png">
+                        <img class="mb-4" src="img/icos/icons8-design-50.png">
 
                         <p class="fun-facts-title"><span class="facts-numbers">30+</span><br>Tamamlanan Proje</p>
 
@@ -2856,7 +2811,7 @@
                     <!--begin fun-facts-box -->
                     <div class="definition col-md-2 fun-facts-box text-center wow fadeIn" data-wow-delay="0.3s">
 
-                        <img class="mb-4" src="img/icons8-umbrella-50.png">
+                        <img class="mb-4" src="img/icos/icons8-umbrella-50.png">
 
                         <p class="fun-facts-title"><span class="facts-numbers">970</span><br>Mutlu Müşteri</p>
 
@@ -2866,7 +2821,7 @@
                     <!--begin fun-facts-box -->
                     <div class=" definition col-md-2 fun-facts-box text-center wow fadeIn" data-wow-delay="0.45s">
 
-                        <img class="mb-4" src="img/icons8-crown-50.png">
+                        <img class="mb-4" src="img/icos/icons8-crown-50.png">
 
                         <p class="fun-facts-title"><span class="facts-numbers">10</span><br>Tasarım Ödülleri</p>
 
@@ -2874,7 +2829,7 @@
 
                     <div class=" definition col-md-2 fun-facts-box text-center wow fadeIn" data-wow-delay="0.75s">
 
-                        <img class="hız mb-4 " src="img/icons8-support-64.png">
+                        <img class="hız mb-4 " src="img/icos/icons8-support-64.png">
 
                         <p class="fun-facts-title"><span class="facts-numbers">24/7</span><br>Hızlı Destek</p>
 
@@ -2884,7 +2839,7 @@
                     <!--begin fun-facts-box -->
                     <div class=" definitionx col-md-2 fun-facts-box text-center wow fadeIn" data-wow-delay="0.6s">
 
-                        <img class="mb-4" src="img/icons8-age-50.png">
+                        <img class="mb-4" src="img/icos/icons8-age-50(1).png">
 
                         <p class="fun-facts-title"><span class="facts-numbers">1</span><br>Yaşında</p>
 
@@ -3149,9 +3104,7 @@
             </div>
         </section>
 
-
         <!-- ==== End Clients ==== -->
-
         <section id="features" class="bg-light amozin">
             <div class="container">
                 <div class="row">
@@ -3187,7 +3140,7 @@
                     </div>
                     <div class="col-sm-4 features-item">
                         <div class="icon-wrapper mt-4 d-flex align-items-center justify-content-center mr-4 mb-3">
-                            <img src="img/icons8-background-remover-96.png">
+                            <img src="img/icons8-communication-96.png">
                         </div>
                         <h3>İletişim ve İşbirliği:</h3>
                         <p class="explanation">
