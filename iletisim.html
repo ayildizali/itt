@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+
+</html>
+
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" sizes="128x128"  href="/img/itt-logo-3.ico">
+    <link rel="icon" type="image/x-icon" href="/img/itt-logo-3.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -159,7 +162,7 @@
             padding: 90px 0;
         }
         .section-title {
-            color: #ddd;
+
         }
         .iletişim{
             width: 100%;
@@ -176,18 +179,171 @@
             -moz-border-radius: 5px 5px 5px 5px;
             border-radius: 5px 5px 5px 5px;
         }
-        #contact-form{
+        .contact-form{
             margin: 0 auto;
             width: 100%;
             max-width: 960px;
             text-align: center;
             margin-bottom: 10px;
         }
-        .mail{
-            width: 50%;
+
+
+        .mail-iletşim{
+            margin-top: 50px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+
         }
-        .mail2{
-            width: 50%;
+        .blog-baslık{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2a2833;
+            font-size: 30px;
+            font-weight: 500;
+           margin-bottom: 40px;
+        }
+        .reply-form__field{
+            border: none;
+            outline: none;
+            width: 100%;
+            display: block;
+            height: 70px;
+            color: #74727a;
+            font-size: 16px;
+            padding-left: 30px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #34B1C4FF ;
+            border-radius: 5px;
+            background-color: #ffffff;
+            margin-bottom: 30px;
+        }
+        .reply-form__fieldx{
+            padding-top:30px  ;
+            border: none;
+            outline: none;
+            width: 100%;
+            display: block;
+            height: 200px;
+            color: #74727a;
+            font-size: 16px;
+            padding-left: 30px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #34B1C4FF ;
+            border-radius: 5px;
+            background-color: #ffffff;
+            margin-bottom: 30px;
+        }
+        .thm-btn:before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            bottom: 2px;
+            left: 2px;
+            border-radius: 5px;
+            background-color: #fff;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition: -webkit-transform .4s ease;
+            transition: -webkit-transform .4s ease;
+            transition: transform .4s ease;
+            transition: transform .4s ease, -webkit-transform .4s ease;
+        }
+        .thm-btn span {
+            position: relative;
+        }
+        .thm-btn:hover {
+            color: #fff;
+        }
+        .thm-btn:hover:before {
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+        }
+        .thm-btn {
+            border: none;
+            display: inline-block;
+            vertical-align: middle;
+            outline: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: #2a2833;
+            padding: 13px 41px;
+            border-radius: 5px;
+            -webkit-transition: background .4s ease, color .4s ease;
+            transition: background .4s ease, color .4s ease;
+            /*background-image: -webkit-gradient(linear, left top, right top, from(#34b1c4), to(#0a2e44));*/
+            background-image: linear-gradient(90deg, #34b1c4 0%, #0a2e44 100%);
+            position: relative;
+        }
+        .fuul{
+            margin-top: 90px;
+        }
+        .leftline{
+            background-color: #34b1c4;
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            width: 80px;
+            height: 1px;
+            margin-top: 1px;
+        }
+        .rightline{
+            background-color: #34b1c4;
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            width: 80px;
+            height: 1px;
+            margin-top: 1px;
+        }
+        .site-footer{
+            position: relative;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            background-color: #192b3c;
+            -webkit-box-shadow: 0px -1px 0px 0px #efefef;
+            box-shadow: 0px -1px 0px 0px #efefef;
+        }
+        .site-footer__upper {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        .footer-widget__title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #FFFFFF;
+            width: 300px;
+            line-height: 1em;
+            margin-bottom: 40px;
+        }
+        .footer-widget__links {
+            margin: 0;
+            margin-top: -5px;
+        }
+        .footer-widget__links li {
+            line-height: 1em;
+        }
+        .footer-widget__links li + li {
+            margin-top: 20px;
+        }
+        .footer-widget__links li a {
+            font-size: 16px;
+            font-weight: 400;
+            color: #74727a;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+        }
+        .footer-widget__links li a:hover {
+            color: #34B1C4;
         }
 
     </style>
@@ -197,12 +353,11 @@
 <div class="se-pre-con"></div>
 
 <!-- ==== Start Navbar ==== -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dar fixed-top">
+<nav class="navbar navbar-expand-lg  fixed-top">
     <div class="container">
         <!-- Brand-->
-        <!--                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>-->
         <a href="index.htm">
-            <img  src="img/itt-logo-3.svg" width="70" height="70" style="cursor: pointer" alt="logo">
+            <img  src="img/itt-logo-3.svg" width="70" height="70" alt="logo">
         </a>
 
         <!-- Button -->
@@ -250,7 +405,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iletişim.html">İletişim</a>
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="mailto:info@ittyazilim.com">
@@ -269,108 +424,98 @@
 <section class="section-dark" id="contact">
 
     <!--begin container-->
-    <div class="container">
+    <div class="container fuul">
 
-        <!--begin row-->
-        <div class="row mt-5">
+        <div class="col-md-12 text-center">
+            <h2 class="section-title">Bizimle İletişime Geçin</h2>
 
-            <!--begin col-md-10-->
-            <div class="col-md-10 mx-auto text-center">
-                <h2 class="section-title text-secondary">Get In Touch</h2>
-
-                <div class="separator_wrapper_white">
-                    <i class="icon icon-star-two grey"></i>
-                </div>
-
-                <p class="section-subtitle text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority<br>have suffered alteration, by injected humor, or new randomized words.</p>
+            <div class="separator_wrapper" style="margin-bottom: 15px">
+                <div class="leftline"></div>
+                <img class="star" src="img/star-24.ico">
+                <div class="rightline"></div>
             </div>
-            <!--end col-md-10-->
 
+            <p class="section-subtitle">Müşterilerimizle güçlü bir bağ kurmak için teknolojiyi kullanıyor,<br> ihtiyaçlarına özel çözümler sunuyoruz.</p>
         </div>
-        <!--end row-->
 
         <!--begin row-->
-        <div class="row">
+        <div class="mail-iletşim">
 
-            <!--begin success message -->
-            <p class="contact_success_box" style="display:none;">We received your message, and you'll hear from us soon. Thank You!</p>
-            <!--end success message -->
-
-            <!--begin contact form -->
-            <form id="contact-form" class="contact" action="" method="post">
-
-                <!--begin col-md-6-->
-                <div class=" mail col-md-6">
-                    <input class=" iletişim form-control mb-3" required="" name="contact_names" placeholder="Full Name*" type="text">
-                    <input class=" iletişim form-control mb-3" required="" name="contact_subject" placeholder="Subject*" type="text">
+        <form  class="reply-form">
+            <div class="row">
+                <div class="col-lg-6">
+                    <input name="name" required type="text" placeholder="AdıSoyad" class="reply-form__field" />
+                    <input name="name" required type="text" placeholder="Konu" class="reply-form__field" />
                 </div>
-                <!--end col-md-6-->
-
-                <!--begin col-md-6-->
-                <div class=" mail2 col-md-6">
-                    <input class=" iletişim form-control mb-3" required="" name="contact_email" placeholder="Email Address*" type="email">
-                    <input class=" iletişim form-control mb-3" required="" name="contact_phone" placeholder="Phone Number*" type="text">
+                <div class="col-lg-6">
+                    <input name="email" required type="text" placeholder="E-Posta " class="reply-form__field" />
+                    <input name="email" required type="text" placeholder="Telefon No" class="reply-form__field" />
                 </div>
-                <!--end col-md-6-->
-
-                <!--begin col-md-12-->
-                <div class="col-md-12">
-                    <textarea class="form-control mb-3" rows="3" name="contact_message" placeholder="Your Message..."></textarea>
+                <div class="col-lg-12">
+                    <textarea name="message" required placeholder="Mesajınızı giriniz" class="reply-form__fieldx"></textarea>
+                    <button  class="reply-form__btn thm-btn" type="submit">
+                        <span>Hemen Başvur</span>
+                    </button>
                 </div>
-                <!--end col-md-12-->
-
-                <!--begin col-md-12-->
-                <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </div>
-                <!--end col-md-12-->
-
-            </form>
-            <!--end contact form -->
-
-        </div>
+            </div>
+        </form>
+    </div>
         <!--end row-->
 
-    </div>
     <!--end container-->
 </section>
 
 
-<!-- Contact Page End -->
-
-<!-- Google Map Start -->
-<section class="contact-page-google-map">
-    <iframe src="https://yandex.com.tr/harita/?ll=29.681280%2C40.716344&mode=search&sctx=ZAAAAAgBEAAaKAoSCXZwsDcxiD1AEYgQV87eL0FAEhIJvD5z1qec5z8RuDoA4q5e1T8iBgABAgMEBSgKOABA1wdIAWoCdHKdAc3MTD2gAQCoAQC9AQydqkrCARGan6zvyQTejcLBywbgmdmcBOoBAPIBAPgBAIICD0JpbGnFn2ltIFZhZGlzaYoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=29.091604%2C41.016691&sspn=0.211898%2C0.087592&text=Bili%C5%9Fim%20Vadisi&utm_campaign=morda&utm_medium=com&utm_source=yandex&z=11.39" class="contact-page-google-map__one" allowfullscreen></iframe>
-</section>
-<!-- Google Map End -->
-
-
-
-
-<!-- ==== Start Get Started ==== -->
-<!-- ==== End Clients ==== -->
-
-<!-- ==== Start Contact Us ==== -->
-<!-- ==== End Contact Us ==== -->
 
 <!-- ==== Start Footer ==== -->
-<footer class="footer">
-    <div class="container text-center ">
+<footer class="site-footer">
+    <div class="site-footer__upper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-widget footer-widget__about">
+                        <img src="img/itt-logo-3.svg" width="120" alt="ITT TEKNOLOJİ"
+                             class="footer-widget__logo" />
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-between footer-widget__links-wrap">
+                    <div class="footer-widget ">
+                        <h3 class="footer-widget__title">Bizi Keşfedin</h3>
+                        <ul class="footer-widget__links list-unstyled">
+                            <li><a href="#">Hakkımızda</a></li>
+                            <li><a href="#">Projeler</a></li>
+                            <li><a href="#">Geliştirici</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget ">
+                        <h3 class="footer-widget__title">Projelerimiz</h3>
+                        <ul class="footer-widget__links list-unstyled">
+                            <li><a  href="abasis.html"> Abasis </a></li>
+                            <li><a href="kobasis.html">Kobasis </a></li>
+                            <li><a href="ittaid.html">ITT-Aid </a></li>
+                            <li><a href="ittsar.html">ITT-SAR </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget ">
+                        <h3 class="footer-widget__title">İletişim</h3>
+                        <ul class="footer-widget__links list-unstyled">
+                            <li>
+                                <a class="" href="mailto:info@ittyazilim.com">
+                                    info@ittyazilim.com
+                                </a>
 
-        <div class="d-flex align-items-center justify-content-between">
-
-            <div class="logo">
-                <img src="img/itt-logo-3.svg" width="70" height="70" alt="">
-            </div>
-            <p>© İTT TECHNOLOGY
-            </p>
-            <div class="social-icons">
-                <a href="mailto:info@ittyazilim.com">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a>
+                            </li>
+                            <li>
+                                <a class="footer-location" style="font-size: 16px; font-weight: 400;color: #74727a; -webkit-transition: all .4s ease;transition: all .4s ease;">Bilişim Vadisi - Gebze/Kocaeli</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </footer>
 <!-- ==== End Footer ==== -->
 
@@ -396,5 +541,8 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <!-- Main Js -->
 <script src="js/main.js"></script>
+
+
+
 </body>
 </html>
