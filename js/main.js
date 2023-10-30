@@ -3,19 +3,19 @@ $(document).ready(function(){
     "use strict";
 
     // Show Navbar background on scroll
-    $(window).scroll(function(){
-        
-        var top = $(window).scrollTop();
-         if(top>=100){
-           $('.navbar').css('background','linear-gradient(135deg, rgba(22, 37, 43, 1) 0%, rgba(22, 37, 43, 1) 100%)'); 
-         }
-         
-         else 
-             if($('.navbar').css('background','linear-gradient(135deg, rgba(22, 37, 43, 1) 0%, rgba(22, 37, 43, 1) 100%)')){
-
-                 $('.navbar').css('background','linear-gradient(135deg, rgba(44, 51, 56, 0) 0%, rgba(44, 51, 56, 0) 100%)'); 
-             }
-     });
+    // $(window).scroll(function(){
+    //
+    //     var top = $(window).scrollTop();
+    //      if(top>=100){
+    //        $('.navbar').css('background','linear-gradient(135deg, rgba(22, 37, 43, 1) 0%, rgba(22, 37, 43, 1) 100%)');
+    //      }
+    //
+    //      else
+    //          if($('.navbar').css('background','linear-gradient(135deg, rgba(22, 37, 43, 1) 0%, rgba(22, 37, 43, 1) 100%)')){
+    //
+    //              $('.navbar').css('background','linear-gradient(135deg, rgba(44, 51, 56, 0) 0%, rgba(44, 51, 56, 0) 100%)');
+    //          }
+    //  });
 
 
 
