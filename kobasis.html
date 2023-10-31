@@ -1239,6 +1239,109 @@
             z-index: 10;
             width: 100%;
         }
+        .thm-btn:before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            bottom: 2px;
+            left: 2px;
+            border-radius: 5px;
+            background-color: #fff;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition: -webkit-transform .4s ease;
+            transition: -webkit-transform .4s ease;
+            transition: transform .4s ease;
+            transition: transform .4s ease, -webkit-transform .4s ease;
+        }
+        .thm-btn span {
+            position: relative;
+        }
+        .thm-btn:hover {
+            color: #fff;
+        }
+        .thm-btn:hover:before {
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+        }
+        .thm-btn {
+            border: none;
+            display: inline-block;
+            vertical-align: middle;
+            outline: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: #2a2833;
+            padding: 13px 41px;
+            border-radius: 5px;
+            -webkit-transition: background .4s ease, color .4s ease;
+            transition: background .4s ease, color .4s ease;
+            /*background-image: -webkit-gradient(linear, left top, right top, from(#34b1c4), to(#0a2e44));*/
+            background-image: linear-gradient(90deg, #34b1c4 0%, #0a2e44 100%);
+            position: relative;
+        }
+        .mailchimp-one__mc-form button[type=submit] {
+            border: none;
+            outline: none;
+            width: 61px;
+            height: 61px;
+            background-image: -webkit-gradient(linear, left top, right top, from(#34b1c4), color-stop(51%, #0a2e44));
+            background-image: linear-gradient(to right, #34b1c4 0%, #0a2e44 51%, #34b1c4 100%);
+            background-size: 200% auto;
+            border-radius: 50%;
+            font-size: 22px;
+            color: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+        }
+        .mailchimp-one {
+            padding-top: 110px;
+            padding-bottom: 120px;
+            background-image: linear-gradient(40deg, #34b1c4 0%, #0a2e44 100%);
+        }
+        .mailchimp-one .block-title__title {
+            color: #fff;
+        }
+        .mailchimp-one__mc-form {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 692px;
+            height: 91px;
+            background-color: #fff;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        .mailchimp-one__mc-form input[type="email"] {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding-left: 40px;
+            font-size: 16px;
+            color: #74727a;
+            font-weight: 400;
+        }
 
 
     </style>
@@ -1273,6 +1376,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Anasayfa <span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hizmetler">Hizmetler</a>
+                </li>
+
                 <li class="nav-item mt-2">
                     <div class="topnav  " id="myTopnavw">
                         <div class="dropdown  nav-item">
@@ -1283,7 +1390,7 @@
                                 <a class="" href="kobasis.html">KOBASİS</a>
                                 <a class="" href="abasis.html">ABASİS</a>
                                 <a class="" href="ittaid.html">İTT AİD</a>
-                                <a class="" href="ittsar.html">İİT SAR</a>
+                                <a class="" href="ittsar.html">İTT SAR</a>
                             </div>
                         </div>
                     </div>
@@ -1304,12 +1411,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="iletisim.html">İletişim</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mailto:info@ittyazilim.com">
-                        Bize Ulaşın
-                        <i class="ml-1 fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="mailto:info@ittyazilim.com">-->
+<!--                        Bize Ulaşın-->
+<!--                        <i class="ml-1 fa fa-envelope" aria-hidden="true"></i>-->
+<!--                    </a>-->
+<!--                </li>-->
             </ul>
         </div>
     </div>
@@ -1320,16 +1427,19 @@
             <div class="col-lg-8">
                 <div class="blog-one__single">
                     <div class="blog-one__image">
-<!--                        <img src="img/kobasis/kobasis_dashboard_desktop.png" alt="" />-->
+                        <img src="img/kobasis/" alt="" />
                     </div>
                     <div class="blog-one__content" >
-                        <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;"> İTT KOBASİS</h1>
-                        <h4 class="blog-one__title">
-                            Kolay Bağış Sistemi!
-                        </h4>
+                        <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px"> İTT KOBASİS
+                       </h1>
+                        <a class="row" style="color: #34B1C4 ;font-size: 24px; font-weight: bold; padding-left: 105px; top: 0; height: 50px">Kolay Bağış Sistemi!</a>
+                        <h6 class="" style="margin-bottom: 50px; margin-top: 30px;color: #0b0b0b">
+                            Derneklerin ve Vakıfların <br>
+                            bağış yöntemini kolaylaştırıyoruz...
+
+                        </h6>
                         <p class="blog-one__text">
-                            <span style="color: #0b0b0b;font-size: 19px">Ayrıntılı Raporlama Ekranları:</span>
-                             Her adımın kontrolü sizde! KOBASİS ile bağışlarınızın detaylı raporlamasını anında elde edin. Şeffaflığı siz sağlayın!
+                            Artık bağış yönetimi karmaşık olmak zorunda değil. KOBASİS ile daha fazla bağışçıya ulaşmak, daha fazla projeye destek sağlamak için harekete geçin. Güçlü yardımcınız KOBASİS ile bağışlarınızı yönetmek hiç bu kadar kolay olmamıştı!
                             <br/><br/>
                              <span style="color: #0b0b0b;font-size: 19px">Mobil Erişim Kolaylığı :</span>
                              Bağışlarınız cebinizde! Kullanıcı dostu ve pratik web uygulamamız sayesinde mobil ekranınızdan bağış almak ve kontrol etmek artık parmaklarınızın ucunda.
@@ -1349,19 +1459,25 @@
                             <span style="color: #0b0b0b;font-size: 19px">Kolay Altyapı Entegrasyonu:</span>
                              Kolay Altyapı Entegrasyonu: Siz karmaşaya boğulmadan, mevcut sistemlerinizle uyum içinde çalışın. KOBASİS, sizin işinizi kolaylaştırmak için burada!
                             <br/><br/>
-                            Artık bağış yönetimi karmaşık olmak zorunda değil. KOBASİS ile daha fazla bağışçıya ulaşmak, daha fazla projeye destek sağlamak için harekete geçin. Güçlü yardımcınız KOBASİS ile bağışlarınızı yönetmek hiç bu kadar kolay olmamıştı!
+                            <span style="color: #0b0b0b;font-size: 19px">Ayrıntılı Raporlama Ekranları:</span>
+                            Her adımın kontrolü sizde! KOBASİS ile bağışlarınızın detaylı raporlamasını anında elde edin. Şeffaflığı siz sağlayın!
                         </p>
 
                     </div>
                 </div>
                 <div class="share-block">
-                    <div class="left-block">
-                    </div>
                     <div class="social-block">
+                        <div class="container">
+                            <form action="https://www.linkedin.com/company/itt-teknoloji/" class="mailchimp-one__mc-form mc-form ml-4">
+                                <button href="" type="submit"><img class="pb-2" src="img/icos/icons8-linkedin-36.png"></button>
+                            </form>
 
-                        <a class=""  href="https://www.linkedin.com/company/itt-teknoloji/">
-                            <img class="pb-2" src="img/icos/icons8-linkedin-36.png">
-                        </a>
+                        </div>
+                    </div>
+                    <div>
+                        <button  class="reply-form__btn thm-btn" type="submit">
+                            <span>Hemen İzle</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1400,8 +1516,8 @@
                     <div class="footer-widget ">
                         <h3 class="footer-widget__title">Projelerimiz</h3>
                         <ul class="footer-widget__links list-unstyled">
-                            <li><a  href="abasis.html"> Abasis </a></li>
                             <li><a href="kobasis.html">Kobasis </a></li>
+                            <li><a  href="abasis.html"> Abasis </a></li>
                             <li><a href="ittaid.html">ITT-Aid </a></li>
                             <li><a href="ittsar.html">ITT-SAR </a></li>
                         </ul>
