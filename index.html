@@ -353,42 +353,14 @@
                 margin-top: -10px;
                 font-size: 50px;
                 font-weight: 400;
-                /*color: #2a2833;*/
+                color: #2a2833;
                 line-height: 1.2em;
             }
             .block-title__title span{
                 font-weight: bold;
 
             }
-            /***************************************************************************************************************
-||||||||||||||||||||||||||||            MASTER STYLESHEET FOR DIMON         ||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************
-||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************
-****************************************************************************************************************
-* 1. common styles
-* 2. header styles
-* 3. banner styles
-* 4. blog styles
-* 5. sidebar styles
-* 6. footer styles
-* 7. inner-banner styles
-* 8. video styles
-* 9. brand styles
-* 10. mailchimp styles
-* 11. accrodion styles
-* 12. fact styles
-* 13. testimonials styles
-* 14. pricing styles
-* 15. cta styles
-* 16. service styles
-* 17. app-shot styles
-****************************************************************************************************************
-||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************/
-            /*
-            * 1. common styles
-            */
+
             body {
                 font-family: "Rubik";
                 color: #74727a;
@@ -403,25 +375,7 @@
                 text-decoration: none;
             }
 
-            .page-wrapper {
-                position: relative;
-                margin: 0 auto;
-                width: 100%;
-                min-width: 300px;
-                overflow: hidden;
-            }
 
-            .thm-base-bg {
-                background-color: #ff4eb5;
-            }
-
-            .thm-base-bg-2 {
-                background-color: #ffa065;
-            }
-
-            .thm-gray-bg {
-                background-color: #fefbf4;
-            }
 
             @media (min-width: 1200px) {
                 .container {
@@ -442,9 +396,6 @@
             .block-title__title span {
                 font-weight: 700;
             }
-
-
-
 
             .post-pagination {
                 display: -webkit-box;
@@ -2105,15 +2056,6 @@
                 line-height: 1em;
                 margin-bottom: 10px;
             }
-            .testimonials-one__single span {
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 1em;
-                letter-spacing: .2em;
-                color: #ff4eb5;
-                text-transform: uppercase;
-            }
-
 
 
             [class*=testimonials-one__nav-] i {
@@ -2132,37 +2074,7 @@
             .pricing-one .switch input {
                 display: none;
             }
-            .pricing-one .slider {
-                position: absolute;
-                cursor: pointer;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                -webkit-transition: .4s;
-                transition: .4s;
-                border-style: solid;
-                border-width: 1px;
-                border-color: #efefef;
-                background-color: white;
-            }
-            .pricing-one .slider:before {
-                position: absolute;
-                content: "";
-                height: 27px;
-                width: 27px;
-                left: 6px;
-                bottom: 6px;
-                -webkit-transform: translateX(0px);
-                transform: translateX(0px);
-                background-image: linear-gradient(40deg, #ff4eb5 0%, #ffa065 100%);
-                -webkit-transition: .4s;
-                transition: .4s;
-            }
-            .pricing-one input:focus + .slider {
-                -webkit-box-shadow: 0 0 1px #2196F3;
-                box-shadow: 0 0 1px #2196F3;
-            }
+
             .pricing-one .switch.off .slider:before {
                 -webkit-transform: translateX(44px);
                 transform: translateX(44px);
@@ -2185,50 +2097,9 @@
                 justify-content: center;
                 margin-bottom: 50px;
             }
-            .pricing-one ul.switch-toggler-list li a {
-                font-size: 18px;
-                font-weight: 400;
-                color: #74727a;
-                padding-left: 10px;
-                padding-right: 10px;
-                display: block;
-            }
-            .pricing-one ul.switch-toggler-list li.active a {
-                color: #2a2833;
-            }
-            .pricing-one [class*=col-] {
-                margin-bottom: 30px;
-            }
-            .pricing-one [class*=col-] + [class*=col-] {
-                border-left: 1px solid #efefef;
-            }
-            .pricing-one [class*=col-]:nth-child(2) .pricing-one__btn {
-                background-image: linear-gradient(40deg, #39aefe 0%, #3cff53 100%);
-            }
-            .pricing-one [class*=col-]:nth-child(3) .pricing-one__btn {
-                background-image: linear-gradient(40deg, #0db8ff 0%, #f033ff 100%);
-            }
-            .pricing-one .tabed-content #year,
-            .pricing-one .tabed-content #month {
-                display: none;
-            }
 
 
-            .pricing-one__single h3,
-            .pricing-one__single p,
-            .pricing-one__single ul,
-            .pricing-one__single span {
-                display: block;
-                margin: 0;
-            }
-            .pricing-one__single h3 {
-                color: #ff4eb5;
-                font-size: 60px;
-                letter-spacing: -0.04em;
-                line-height: 1em;
-                font-weight: 400;
-                margin-bottom: 25px;
-            }
+
             .pricing-one__single p,
             .pricing-one__single span.tag-line {
                 color: #2a2833;
@@ -2259,15 +2130,7 @@
                 margin-top: 30px;
             }
 
-            .cta-one {
-                padding: 165px 0;
-                position: relative;
-            }
-            .cta-one__bg {
-                position: absolute;
-                bottom: 4%;
-                right: 0;
-            }
+
             .cta-one .container {
                 position: relative;
             }
@@ -2324,24 +2187,6 @@
             }
 
 
-            .cta-two .container {
-                position: relative;
-            }
-
-            .cta-two .block-title {
-                margin-top: 30px;
-                margin-bottom: 35px;
-            }
-            .cta-two .block-title__title {
-                letter-spacing: -.04em;
-            }
-            .cta-two__icon {
-                font-size: 62px;
-                color: #ffa065;
-            }
-            .cta-two__text {
-                margin-bottom: 50px;
-            }
             .cta-two__text p {
                 margin: 0;
                 color: #74727a;
@@ -2376,147 +2221,7 @@
                     transform: translateY(-30px);
                 }
             }
-            /*
-            * 16. service styles
-            */
-            .service-one {
-                padding-bottom: 90px;
-            }
-            .service-one .container {
-                position: relative;
-                z-index: 10;
-            }
-            .service-one__single {
-                border-style: solid;
-                border-width: 1px;
-                border-color: #efefef;
-                border-radius: 5px;
-                padding: 2px;
-                position: relative;
-                margin-bottom: 30px;
-            }
-            .service-one__single:before {
-                content: '';
-                position: absolute;
-                top: -1px;
-                left: -1px;
-                right: -1px;
-                bottom: -1px;
-                border-radius: 5px;
-                opacity: 0;
-                background-image: linear-gradient(40deg, #ff43c0 0%, #ffa95c 100%);
-                -webkit-transition: all .4s ease;
-                transition: all .4s ease;
-            }
-            .service-one__single h3 {
-                margin: 0;
-                font-size: 20px;
-                line-height: 34px;
-                color: #2a2833;
-            }
-            .service-one__single h3 a {
-                color: inherit;
-                -webkit-transition: all .4s ease;
-                transition: all .4s ease;
-            }
-            .service-one__single h3 a:hover {
-                color: #ff4eb5;
-            }
-            .service-one__single p {
-                margin: 0;
-                color: #74727a;
-                font-size: 16px;
-                line-height: 34px;
-                margin-top: 35px;
-                margin-bottom: 25px;
-            }
-            .service-one__single:hover:before {
-                opacity: 1;
-            }
-            .service-one__link {
-                color: #2a2833;
-                font-size: 22px;
-                -webkit-transition: all .4s ease;
-                transition: all .4s ease;
-            }
-            .service-one__link:hover {
-                color: #ff4eb5;
-            }
-            .service-one__inner {
-                background-color: #fff;
-                border-radius: 5px;
-                position: relative;
-                padding-top: 50px;
-                padding-bottom: 35px;
-            }
-            .service-one__icon {
-                width: 108px;
-                height: 108px;
-                -webkit-box-shadow: 0px 20px 40px 0px rgba(255, 118, 142, 0.8);
-                box-shadow: 0px 20px 40px 0px rgba(255, 118, 142, 0.8);
-                border-radius: 5px;
-                background-image: linear-gradient(40deg, #ff43c0 0%, #ffa95c 100%);
-                margin-left: auto;
-                margin-right: auto;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                color: #fff;
-                font-size: 70px;
-                margin-bottom: 30px;
-            }
-            .service-one [class*=col-]:nth-child(1) .service-one__single:before,
-            .service-one [class*=col-]:nth-child(1) .service-one__icon {
-                background-mage: linear-gradient(40deg, #ff43c0 0%, #ffa95c 100%);
-            }
-            .service-one [class*=col-]:nth-child(1) .service-one__icon {
-                -webkit-box-shadow: 0px 20px 40px 0px rgba(255, 118, 142, 0.8);
-                box-shadow: 0px 20px 40px 0px rgba(255, 118, 142, 0.8);
-            }
-            .service-one [class*=col-]:nth-child(2) .service-one__single:before,
-            .service-one [class*=col-]:nth-child(2) .service-one__icon {
-                background-image: linear-gradient(40deg, #0db8ff 0%, #f332ff 100%);
-            }
-            .service-one [class*=col-]:nth-child(2) .service-one__icon {
-                -webkit-box-shadow: 0px 20px 60px 0px rgba(141, 142, 255, 0.8);
-                box-shadow: 0px 20px 60px 0px rgba(141, 142, 255, 0.8);
-            }
-            .service-one [class*=col-]:nth-child(3) .service-one__single:before,
-            .service-one [class*=col-]:nth-child(3) .service-one__icon {
-                background-image: linear-gradient(40deg, #39aeff 0%, #3cff53 100%);
-            }
-            .service-one [class*=col-]:nth-child(3) .service-one__icon {
-                -webkit-box-shadow: 0px 20px 40px 0px rgba(58, 212, 173, 0.8);
-                box-shadow: 0px 20px 40px 0px rgba(58, 212, 173, 0.8);
-            }
-            .service-one [class*=col-]:nth-child(4) .service-one__single:before,
-            .service-one [class*=col-]:nth-child(4) .service-one__icon {
-                background-image: linear-gradient(40deg, #ff703e 0%, #ffec4e 100%);
-            }
-            .service-one [class*=col-]:nth-child(4) .service-one__icon {
-                -webkit-box-shadow: 0px 20px 40px 0px rgba(255, 178, 71, 0.8);
-                box-shadow: 0px 20px 40px 0px rgba(255, 178, 71, 0.8);
-            }
 
-            /*
-            * 17. app-shot styles
-            */
-            .app-shot-one {
-                padding-top: 120px;
-                padding-bottom: 115px;
-                position: relative;
-            }
-            .app-shot-one__bg {
-                position: absolute;
-                bottom: 25%;
-                left: 0;
-            }
             .app-shot-one .container-fluid {
                 max-width: 1595px;
                 width: 100%;
@@ -2559,44 +2264,12 @@
                 z-index: 10;
                 width: 100%;
             }
-            .app-shot-one .app-shot-one__carousel .owl-dots .owl-dot span {
-                width: 7px;
-                height: 7px;
-                background-color: #1c1d3f;
-                -webkit-transform: scale(1);
-                transform: scale(1);
-                opacity: 0.2;
-                margin: 0 3px;
-                -webkit-transition: opacity .4s ease, background .4s ease, -webkit-transform .4s ease;
-                transition: opacity .4s ease, background .4s ease, -webkit-transform .4s ease;
-                transition: transform .4s ease, opacity .4s ease, background .4s ease;
-                transition: transform .4s ease, opacity .4s ease, background .4s ease, -webkit-transform .4s ease;
-            }
-            .app-shot-one .app-shot-one__carousel .owl-dots .owl-dot:hover span, .app-shot-one .app-shot-one__carousel .owl-dots .owl-dot.active span {
-                opacity: 1;
-                background-color: #1bc9f4;
-                -webkit-transform: scale(1.285);
-                transform: scale(1.285);
-            }
-            .app-shot-one .owl-item img {
-                -webkit-transition: -webkit-transform .4s ease;
-                transition: -webkit-transform .4s ease;
-                transition: transform .4s ease;
-                transition: transform .4s ease, -webkit-transform .4s ease;
-            }
-            html {
-                scroll-behavior: smooth;
+
+            .block-title__title{
+                color: #74727a;
+                margin-top: 30px;
             }
 
-            .testimonials-one__nav-left, .testimonials-one__nav-right {
-                cursor: pointer;
-            }
-            .hidden {
-                display: none;
-            }
-            .block-title__title{
-                color: #FFFFFF;
-            }
 
         </style>
     </head>
@@ -2625,6 +2298,10 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#slider">Anasayfa <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#hizmetler">Hizmetler</a>
                         </li>
                         <li class="nav-item mt-2">
                             <div class="topnav  " id="myTopnavw">
@@ -2657,13 +2334,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="iletisim.html">İletişim</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto:info@ittyazilim.com">
-                                Bize Ulaşın
-                                <i class="ml-1 fa fa-envelope" aria-hidden="true"></i>
-                            </a>
-                        </li>
-
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="mailto:info@ittyazilim.com">-->
+<!--                                Bize Ulaşın-->
+<!--                                <i class="ml-1 fa fa-envelope" aria-hidden="true"></i>-->
+<!--                            </a>-->
+<!--                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -2732,15 +2408,6 @@
                 <!--begin row-->
                 <div class="row foto">
 
-                    <!--begin col-md-6-->
-                    <div class="col-md-6 mb-5 ">
-
-                        <img src="img/kobasis_dashboard_desktop.png" class="img-fluid" alt="imac">
-
-                    </div>
-                    <!--end col-md-6-->
-
-
 <!---->
                     <!--begin col-md-6-->
                     <div class="col-md-6 mt-5 not ">
@@ -2757,6 +2424,12 @@
                             <li><i class="fas fa-check text-info"></i> Süreç otomasyonu ile verimliliği artırıyoruz.</li>
                             <li><i class="fas fa-check text-info"></i> Kullanımı kolaylaştırmak için eğitim ve destek sağlıyoruz.</li>
                         </ul>
+                    </div>
+                    <!--end col-md-6-->
+
+                    <!--begin col-md-6-->
+                    <div class="col-md-6  mb-3 ">
+                        <img src="img/imac.png" class="w-100" alt="imac">
                     </div>
                     <!--end col-md-6-->
 
@@ -2838,10 +2511,10 @@
         <section id="services">
 
             <!--begin section-grey-->
-            <div class="section-grey py-2">
+            <div id="hizmetler" class="section-grey py-2">
 
                 <!--begin container-->
-                <div class="container   ">
+                <div  class="container">
                     <div class="companent"></div>
                     <!--begin row-->
                     <div class="row mb-4">
@@ -2856,7 +2529,7 @@
                                 <div class="çizgi2"></div>
                             </div>
 
-                            <p class="section-subtitle">There are many variations of passages of Lorem Ipsum available, but the majority<br>have suffered alteration, by injected humor, or new randomized words.</p>
+                            <p class="section-subtitle">Müşterilerimize en son teknolojileri kullanarak özelleştirilmiş ve yenilikçi çözümler sunuyoruz. Her iş alanında uzmanlaşmış bir ekip olarak verimliliğinizi artırmanıza yardımcı oluyoruz.</p>
                         </div>
                         <!--end col-md-12-->
 
