@@ -17,8 +17,6 @@ $(document).ready(function(){
     //          }
     //  });
 
-
-
      // Animate loader off screen
     $('.se-pre-con').fadeOut('slow');
 
@@ -62,7 +60,6 @@ $(document).ready(function(){
             itemSelector: '.grid-item',
             layoutMode: 'fitRows'
         });
-        
 
         // images have loaded
 
