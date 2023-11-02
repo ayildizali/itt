@@ -1184,6 +1184,8 @@ body {
     .contact .content {
         margin-bottom: 30px;
     }
+
+
 }
 
 
@@ -1255,6 +1257,27 @@ body {
     /* Contact Us */
     .contact .content {
         margin-bottom: 30px;
+    }
+    .expla-kobasis{
+
+    }
+    .bg-footer{
+        width: 100%;
+    }
+    .pc{
+        width: 320px;
+        padding-right: 20px ;
+    }
+    .subtitle{
+        flex-direction: column;
+        margin-top: 100px;
+        left: 0;
+
+
+    }
+    .explanation{
+        margin-top: 100px;
+        padding: 0;
     }
 }
 
