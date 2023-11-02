@@ -329,6 +329,80 @@
         .footer-widget__links li a:hover {
             color: #34B1C4;
         }
+        .bg-footer {
+            background-color: #0a2e44;
+            padding: 50px 0 30px;
+        }
+        .footer-heading {
+            letter-spacing: 2px;
+        }
+
+        .footer-link a {
+            color: #acacac;
+            line-height: 40px;
+            font-size: 14px;
+            transition: all 0.5s;
+        }
+
+        .footer-link a:hover {
+            color: #34b1c4;
+        }
+
+
+        .contact-info {
+            color: #acacac;
+            font-size: 14px;
+        }
+
+        .footer-social-icon {
+            font-size: 15px;
+            height: 34px;
+            width: 34px;
+            line-height: 34px;
+            border-radius: 3px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .facebook {
+            background-color: #4e71a8;
+            color: #ffffff;
+        }
+
+        .twitter {
+            background-color: #55acee;
+            color: #ffffff;
+        }
+
+        .google {
+            background-color: #d6492f;
+            color: #ffffff;
+        }
+
+        .apple {
+            background-color: #424041;
+            color: #ffffff;
+        }
+
+        .footer-alt {
+            color: #acacac;
+        }
+
+        .footer-heading {
+            position: relative;
+
+        }
+
+        .footer-heading:after {
+            content: '';
+            width: 25px;
+            /*border-bottom: 1px solid #FFF;*/
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            /*border-bottom: 1px solid #34b1c4;*/
+        }
 
     </style>
 </head>
@@ -368,15 +442,15 @@
 
                 <li class="nav-item mt-1">
                     <div class="topnav  " id="myTopnavw">
-                        <div class="dropdown  nav-item">
-                            <button class="dropbtn nav-link">Projeler
+                        <div class="dropdown  nav-item" style="display: block">
+                            <button class="dropbtn nav-link" style="display: block">Projeler
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content nav-link ">
-                                <a class="" href="kobasis.html">KOBASİS</a>
-                                <a class="" href="abasis.html">ABASİS</a>
-                                <a class="" href="ittaid.html">İTT AİD</a>
-                                <a class="" href="ittsar.html">İİT SAR</a>
+                                <a class="" href="kobasis.html" style="display: block">KOBASİS</a>
+                                <a class="" href="abasis.html" style="display: block">ABASİS</a>
+                                <a class="" href="ittaid.html" style="display: block">İTT AİD</a>
+                                <a class="" href="ittsar.html" style="display: block">İİT SAR</a>
                             </div>
                         </div>
                     </div>
@@ -384,11 +458,11 @@
                 <li class="nav-item mt-1">
                     <div class="topnav " id="myTopnav">
                         <div class="dropdown ">
-                            <button class="dropbtn nav-link">Geliştirici
+                            <button class="dropbtn nav-link" style="display: block">Geliştirici
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content mb-5">
-                                <a class="mb-3 pl-3" href="https://stackshare.io/itt-teknoloji-as/itt-teknoloji">Kullandığımız Teknolojiler</a>
+                                <a class="mb-3 pl-3" href="https://stackshare.io/itt-teknoloji-as/itt-teknoloji" style="display: block">Kullandığımız Teknolojiler</a>
                             </div>
                         </div>
                     </div>
@@ -473,54 +547,58 @@
 
 
 <!-- ==== Start Footer ==== -->
-<footer class="site-footer">
-    <div class="site-footer__upper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="footer-widget footer-widget__about">
-                        <img src="img/itt-logo-3.svg" width="120" alt="ITT TEKNOLOJİ"
-                             class="footer-widget__logo" />
-                    </div>
+<footer class="bg-footer">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-3">
+                <div > style="display: block"
+                    <img src="img/itt-logo-3.svg" width="220">
                 </div>
-                <div class="col-lg-6 d-flex justify-content-between footer-widget__links-wrap">
-                    <div class="footer-widget ">
-                        <h3 class="footer-widget__title">Bizi Keşfedin</h3>
-                        <ul class="footer-widget__links list-unstyled">
-                            <li><a href="#">Hakkımızda</a></li>
-                            <li><a href="#">Projeler</a></li>
-                            <li><a href="#">Geliştirici</a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-widget ">
-                        <h3 class="footer-widget__title">Projelerimiz</h3>
-                        <ul class="footer-widget__links list-unstyled">
-                            <li><a  href="abasis.html"> Abasis </a></li>
-                            <li><a href="kobasis.html">Kobasis </a></li>
-                            <li><a href="ittaid.html">ITT-Aid </a></li>
-                            <li><a href="ittsar.html">ITT-SAR </a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-widget ">
-                        <h3 class="footer-widget__title">İletişim</h3>
-                        <ul class="footer-widget__links list-unstyled">
-                            <li>
-                                <a class="" href="mailto:info@ittyazilim.com">
-                                    info@ittyazilim.com
-                                </a>
+            </div>
 
-                            </li>
-                            <li>
-                                <a class="footer-location" style="font-size: 16px; font-weight: 400;color: #74727a; -webkit-transition: all .4s ease;transition: all .4s ease;">Bilişim Vadisi - Gebze/Kocaeli</a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="col-lg-3 mt-5">
+                <div>
+                    <h6 class="footer-heading text-uppercase text-white">Bizi Keşfedin</h6>
+                    <ul class="list-unstyled footer-link mt-4">
+                        <li><a href=" index.html#misyonvizyon">Hakkımızda</a></li>
+                        <li><a href="kobasis.html">Projeler</a></li>
+                        <li><a  href="https://stackshare.io/itt-teknoloji-as/itt-teknoloji">Geliştirici</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mt-5">
+                <div>
+                    <h6 class="footer-heading text-uppercase text-white">Projelerimiz</h6>
+                    <ul class="list-unstyled footer-link mt-4">
+                        <li><a href="kobasis.html">KOBASİS</a></li>
+                        <li><a href="abasis.html">ABASİS</a></li>
+                        <li><a href="ittaid.html">ITT-AİD</a></li>
+                        <li><a href="ittsar.html">ITT-SAR</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mt-5">
+                <div>
+                    <h6 class="footer-heading text-uppercase text-white">İletişim</h6>
+                    <ul class="list-unstyled footer-link mt-4">
+                        <li>
+                            <a href="#">
+                                info@ittyazilim.com
+                            </a>
+                        </li>
+                        <li><a href="https://maps.app.goo.gl/Fnwq5TU7hQUjBvoH9">Bilişim Vadisi - Gebze/Kocaeli
+                            <img class="footer-link" src="img/icons8-location-30.png"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="text-center mt-5">
+        <p class="footer-alt mb-0 f-14">2023  ©  ITT TECNOLOGY A.Ş</p>
+    </div>
 </footer>
 <!-- ==== End Footer ==== -->
 
