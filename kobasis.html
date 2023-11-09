@@ -161,23 +161,24 @@
             margin-bottom: 0;
         }
         .blog-one__image {
-            position: relative;
-            background-color: #2a2833;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            /*position: relative;*/
+            /*background-color: #2a2833;*/
+            /*border-top-left-radius: 5px;*/
+            /*border-top-right-radius: 5px;*/
         }
          .blog-one__content {
-            padding-left: 50px;
-            padding-right: 50px;
+            /*padding-left: 50px;*/
+            /*padding-right: 50px;*/
             border-radius: 0;
             -webkit-box-shadow: none !important;
             box-shadow: none !important;
         }
          .blog-one__title {
-
+             padding: 0 50px;
             margin-bottom: 28px;
         }
          .blog-one__text {
+             padding: 0 50px;
             margin-bottom: 0;
             font-size: 16px;
             line-height: 34px;
@@ -206,32 +207,6 @@
             -ms-flex-align: center;
             align-items: center;
         }
-        /***************************************************************************************************************
-||||||||||||||||||||||||||||            MASTER STYLESHEET FOR DIMON         ||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************
-||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************
-****************************************************************************************************************
-* 1. common styles
-* 2. header styles
-* 3. banner styles
-* 4. blog styles
-* 5. sidebar styles
-* 6. footer styles
-* 7. inner-banner styles
-* 8. video styles
-* 9. brand styles
-* 10. mailchimp styles
-* 11. accrodion styles
-* 12. fact styles
-* 13. testimonials styles
-* 14. pricing styles
-* 15. cta styles
-* 16. service styles
-* 17. app-shot styles
-****************************************************************************************************************
-||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************/
         /*
         * 1. common styles
         */
@@ -271,10 +246,10 @@
             box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.03);
         }
         .blog-one__image {
-            position: relative;
-            background-color: #2a2833;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            /*position: relative;*/
+            /*background-color: #2a2833;*/
+            /*border-top-left-radius: 5px;*/
+            /*border-top-right-radius: 5px;*/
         }
         .blog-one__image > img {
             border-top-left-radius: 5px;
@@ -284,18 +259,17 @@
             transition: all .4s ease;
         }
         .blog-one__content {
-            border-style: solid;
+            border-style:  solid;
             border-width: 1px;
             border-color: #efefef;
             background-color: white;
-            border-top: 0;
+
             -webkit-transition: all .4s ease;
             transition: all .4s ease;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            padding: 0 50px;
+            border-radius: 5px;
             padding-top: 45px;
             padding-bottom: 40px;
+
         }
 
         .blog-one__meta li {
@@ -353,8 +327,8 @@
             margin-bottom: 28px;
         }
         .blog-details .blog-one__content {
-            padding-left: 50px;
-            padding-right: 50px;
+            /*padding-left: 50px;*/
+            /*padding-right: 50px;*/
             border-radius: 0;
             -webkit-box-shadow: none !important;
             box-shadow: none !important;
@@ -531,13 +505,7 @@
         .sidebar__post__single + .sidebar__post__single {
             margin-top: 30px;
         }
-        .sidebar__post-image, .sidebar__post-content {
-            display: table-cell;
-            vertical-align: middle;
-        }
-        .sidebar__post-image {
-            width: 60px;
-        }
+
         .sidebar__post-image .inner-block {
             width: 100%;
         }
@@ -545,16 +513,7 @@
             width: 100%;
             border-radius: 50%;
         }
-        .sidebar__post-content {
-            padding-left: 20px;
-        }
-        .sidebar__post-title {
-            margin: 0;
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 400;
-            color: #74727a;
-        }
+
         .sidebar__post-title a {
             color: inherit;
             -webkit-transition: all .4s ease;
@@ -563,14 +522,7 @@
         .sidebar__post-title a:hover {
             color: #2a2833;
         }
-        .sidebar__category-list {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        .sidebar__category-list-item {
-            line-height: 1em;
-        }
+
         .sidebar__category-list-item a {
             color: #74727a;
             font-size: 16px;
@@ -598,17 +550,7 @@
         .sidebar__category-list-item + .sidebar__category-list-item {
             margin-top: 27px;
         }
-        .sidebar__tags-list {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            margin-top: -10px;
-        }
-        .sidebar__tags-list-item {
-            display: inline-block;
-            vertical-align: middle;
-            line-height: 1em;
-        }
+
         .sidebar__tags-list-item a {
             display: block;
             color: #74727a;
@@ -621,13 +563,7 @@
         .sidebar__tags-list-item a:hover {
             color: #ffa065;
         }
-        .sidebar__search-form {
-            width: 100%;
-            height: 83px;
-            background-image: linear-gradient(40deg, #ff4eb5 0%, #ffa065 100%);
-            position: relative;
-            border-radius: 5px;
-        }
+
         .sidebar__search-form input {
             width: 100%;
             height: 100%;
@@ -675,27 +611,6 @@
             transition: all .4s ease;
         }
 
-        /*
-        * 6. footer styles
-        */
-        .site-footer {
-            position: relative;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
-            background-color: #192b3c;
-            -webkit-box-shadow: 0px -1px 0px 0px #efefef;
-            box-shadow: 0px -1px 0px 0px #efefef;
-        }
-        .site-footer__upper {
-            padding-top: 120px;
-            padding-bottom: 120px;
-        }
-
-        .site-footer__bottom {
-            background-color: #fff9ff;
-        }
         .site-footer__bottom .inner-container {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -759,18 +674,6 @@
             }
         }
 
-        .footer-widget__title {
-            font-size: 18px;
-            font-weight: 500;
-            color: #FFFFFF;
-            width: 300px;
-            line-height: 1em;
-            margin-bottom: 40px;
-        }
-        .footer-widget__links {
-            margin: 0;
-            margin-top: -5px;
-        }
         .footer-widget__links li {
             line-height: 1em;
         }
@@ -788,13 +691,7 @@
             color: #34B1C4;
         }
 
-        .footer-widget__contact {
-            font-size: 16px;
-            font-weight: 400;
-            color: #74727a;
-            margin: 0;
-            line-height: 30px;
-        }
+
         .footer-widget__contact a {
             color: inherit;
             -webkit-transition: all .4s ease;
@@ -994,27 +891,6 @@
             text-transform: uppercase;
         }
 
-        [class*=testimonials-one__nav-] {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            width: 61px;
-            height: 61px;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            text-align: center;
-            background-color: #fff;
-            color: #2a2833;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
 
         [class*=testimonials-one__nav-] i {
             font-size: 22px;
@@ -1389,6 +1265,40 @@
             display: block;
             /*border-bottom: 1px solid #34b1c4;*/
         }
+        .title-line{
+            z-index: -40;
+            height: 40px;
+            width: 100%;
+            background-image: -webkit-gradient(linear, left top, right top, from(#34b1c4), color-stop(51%, #0a2e44));
+            background-image: linear-gradient(to right, #34b1c4 0%, #0a2e44 51%, #34b1c4 100%);
+            background-size: 200% auto;
+        }
+        .title-kolay{
+            margin-top: 30px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding: 0 50px;
+            font-size: 30px;
+            font-weight: 500;
+            padding-top: 3px;
+        }
+        .kobasis{
+            height: 25px;
+            width: 200px;
+            background-image: -webkit-gradient(linear, left top, right top, from(#34b1c4), color-stop(51%, #0a2e44));
+            background-image: linear-gradient(to right, #34b1c4 0%, #0a2e44 51%, #34b1c4 100%);
+            color: #FFFFFF;
+            border-radius: 14px;
+            font-size: 50px;
+            padding: 10px;
+
+        }
+        .kobasis-header{
+            display: flex;
+            justify-content: end;
+        }
 
 
     </style>
@@ -1477,12 +1387,22 @@
                         <img src="img/kobasis/" alt="" />
                     </div>
                     <div class="blog-one__content" >
-                        <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px"> İTT KOBASİS
-                       </h1>
-                        <a class="row explanation"  style="color: #34B1C4 ;font-size: 24px; font-weight: bold; padding-left: 105px; top: 0; height: 50px">Kolay Bağış Sistemi!</a>
-                        <h6 class="" style="margin-bottom: 50px; margin-top: 30px;color: #0b0b0b">
+                        <div class="kobasis-header">
+                            <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px">  İTT  <span class="kobasis">KOBASİS</span>
+                            </h1>
+                        </div>
+
+                        <a class="row explanation"  style="color: #34B1C4 ;font-size: 17px; font-weight: bold; padding-left: 155px; top: 0; height: 50px"></a>
+
+                        <div class="title-line">
+
+                            <div class="title-kolay">
+                                Kolay Bağış Sistemi
+                            </div>
+                        </div>
+                        <h6 class=" " style="margin-bottom: 35px; font-size: 14px; margin-top: 30px;color: #0b0b0b ; padding: 0 40px; display: flex; align-items: center; justify-content: end; text-align: end">
                             Derneklerin ve Vakıfların <br>
-                            bağış yöntemini kolaylaştırıyoruz...
+                            bağış yöntemini kolaylaştırıyoruz.
 
                         </h6>
                         <p class="blog-one__text">
@@ -1581,7 +1501,7 @@
                             </a>
                         </li>
                         <li><a href="https://maps.app.goo.gl/Fnwq5TU7hQUjBvoH9">Bilişim Vadisi - Gebze/Kocaeli
-                            <img class="footer-link" src="img/icons8-location-30.png"></a></li>
+                            <img class="footer-link" src="img/icons8-location-30.png" style="margin-bottom: 10px"></a></li>
                     </ul>
                 </div>
             </div>
