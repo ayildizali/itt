@@ -119,7 +119,7 @@
 
         @media screen and (max-width: 600px) {
             .topnav a:not(:first-child), .dropdown .dropbtn {
-                display: none;
+                /*display: none;*/
             }
             .topnav a.icon {
                 float: right;
@@ -147,7 +147,6 @@
                 text-align: left;
             }
         }
-
         body {
             font-family: "Rubik";
             color: #74727a;
@@ -386,21 +385,23 @@
             border-top: 0;
             -webkit-transition: all .4s ease;
             transition: all .4s ease;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            padding: 0 50px;
+            border-radius: 15px;
+            /*padding: 0 50px;*/
+            /*padding-top: 45px;*/
+            padding-bottom: 40px;
+        }
+        .blog-one__content {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #efefef;
+            background-color: white;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+            border-radius: 15px;
             padding-top: 45px;
             padding-bottom: 40px;
         }
-        .blog-one__meta {
-            margin: 0;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-        }
+
         .blog-one__meta li {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -481,14 +482,14 @@
             margin-bottom: 0;
         }
         .blog-details .blog-one__title {
-            font-size: 25px;
+            font-size: 30px;
             font-weight: 500;
             line-height: 1.2em;
             margin-bottom: 28px;
         }
         .blog-details .blog-one__content {
-            padding-left: 50px;
-            padding-right: 50px;
+            /*padding-left: 50px;*/
+            /*padding-right: 50px;*/
             border-radius: 0;
             -webkit-box-shadow: none !important;
             box-shadow: none !important;
@@ -521,8 +522,8 @@
             padding: 50px;
             border: 1px solid #efefef;
             border-top: 0;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
         }
         .blog-details .share-block .left-block p {
             margin: 0;
@@ -637,16 +638,17 @@
             font-weight: 500;
             margin-bottom: 30px;
         }
-        .sidebar__single:not(.sidebar__search) {
-            /*padding: 50px;*/
-            /*border-style: solid;*/
-            /*border-width: 1px;*/
-            /*border-color: #efefef;*/
-            /*border-radius: 5px;*/
-        }
+        /*.sidebar__single:not(.sidebar__search) {*/
+        /*    padding: 50px;*/
+        /*    border-style: solid;*/
+        /*    border-width: 1px;*/
+        /*    border-color: #efefef;*/
+        /*    border-radius: 5px;*/
+        /*}*/
         @media (max-width: 1199px) {
             .sidebar__single:not(.sidebar__search) {
                 padding: 30px;
+                width: 350px;
             }
         }
         .sidebar__single + .sidebar__single {
@@ -803,20 +805,7 @@
             display: none;
         }
 
-        .site-footer__upper {
-            padding-top: 120px;
-            padding-bottom: 120px;
-        }
-        .site-footer{
-            position: relative;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
-            background-color: #192b3c;
-            -webkit-box-shadow: 0px -1px 0px 0px #efefef;
-            box-shadow: 0px -1px 0px 0px #efefef;
-        }
+
         .thm-btn:before {
             content: '';
             position: absolute;
@@ -856,7 +845,7 @@
             -webkit-transition: background .4s ease, color .4s ease;
             transition: background .4s ease, color .4s ease;
             /*background-image: -webkit-gradient(linear, left top, right top, from(#34b1c4), to(#0a2e44));*/
-            background-image: linear-gradient(90deg, #34b1c4 0%, #0a2e44 100%);
+            background-image: linear-gradient(90deg, #0ab0ce 0%, #19afe6 100%);
             position: relative;
         }
         .mailchimp-one__mc-form button[type=submit] {
@@ -864,8 +853,8 @@
             outline: none;
             width: 61px;
             height: 61px;
-            background-image: -webkit-gradient(linear, left top, right top, from(#34b1c4), color-stop(51%, #0a2e44));
-            background-image: linear-gradient(to right, #34b1c4 0%, #0a2e44 51%, #34b1c4 100%);
+            background-image: -webkit-gradient(linear, left top, right top, from(#0ab0ce), color-stop(51%, #19afe6));
+            background-image: linear-gradient(to right, #0ab0ce 0%, #19afe6 51%, #0ab0ce 100%);
             background-size: 200% auto;
             border-radius: 50%;
             font-size: 22px;
@@ -888,11 +877,7 @@
             -webkit-transition: all .4s ease;
             transition: all .4s ease;
         }
-        .mailchimp-one {
-            padding-top: 110px;
-            padding-bottom: 120px;
-            background-image: linear-gradient(40deg, #34b1c4 0%, #0a2e44 100%);
-        }
+
         .mailchimp-one .block-title__title {
             color: #fff;
         }
@@ -994,6 +979,55 @@
             display: block;
             /*border-bottom: 1px solid #34b1c4;*/
         }
+        .kobasis-header{
+            display: flex;
+            justify-content: end;
+        }
+        .kobasis{
+            height: 25px;
+            width: 200px;
+            background-image: -webkit-gradient(linear, left top, right top, from(#0ab0ce), color-stop(51%, #19afe6));
+            background-image: linear-gradient(to right, #0ab0ce 0%, #19afe6 85% );
+            color: #FFFFFF;
+            border-radius: 14px;
+            font-size: 50px;
+            padding: 10px;
+
+        }
+        .ne{
+            z-index: -40;
+            height: 40px;
+            width: 100%;
+            background-image: -webkit-gradient(linear, left top, right top, from(#0ab0ce), color-stop(51%, #19afe6));
+            background-image: linear-gradient(to right, #0ab0ce 0%, #19afe6 51%, #0ab0ce 100%);
+            background-size: 200% auto;
+        }
+        .title-kolay{
+            margin-top: 30px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding: 0 50px;
+            font-size: 30px;
+            font-weight: 500;
+            padding-top: 3px;
+        }
+        .kobasis-header{
+            display: flex;
+            justify-content: end;
+        }
+        .road-map{
+            /*padding: 120px 0;*/
+            margin-top: 70px;
+            width: 100%;
+        }
+        .kobasisicep{
+            margin-bottom: 100px;
+        }
+        .kbs-road-map{
+            margin-top: 100px;
+        }
 
 
     </style>
@@ -1029,9 +1063,9 @@
                     <a class="nav-link" href="index.html">Anasayfa <span class="sr-only">(current)</span></a>
                 </li>
 
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="#hizmetler">Hizmetler</a>-->
-<!--                </li>-->
+                <!--                <li class="nav-item">-->
+                <!--                    <a class="nav-link" href="index.html#hizmetler">Hizmetler</a>-->
+                <!--                </li>-->
 
                 <li class="nav-item mt-2">
                     <div class="topnav  " id="myTopnavw">
@@ -1051,7 +1085,7 @@
                 </li>
                 <li class="nav-item mt-2">
                     <div class="topnav " id="myTopnav">
-                        <div class="dropdown ">
+                        <div class="dropdown " style="display: block">
                             <button class="dropbtn nav-link" style="display: block">Geliştirici
                                 <i class="fa fa-caret-down"></i>
                             </button>
@@ -1062,57 +1096,92 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                    <a class="nav-link" href="iletişim.html">İletişim</a>
                 </li>
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="mailto:info@ittyazilim.com">-->
-<!--                        Bize Ulaşın-->
-<!--                        <i class="ml-1 fa fa-envelope" aria-hidden="true"></i>-->
-<!--                    </a>-->
+                <!--                <li class="nav-item">-->
+                <!--                    <a class="nav-link" href="mailto:info@ittyazilim.com">-->
+                <!--                        Bize Ulaşın-->
+                <!--                        <i class="ml-1 fa fa-envelope" aria-hidden="true"></i>-->
+                <!--                    </a>-->
 
-<!--                </li>-->
+                <!--                </li>-->
 
             </ul>
         </div>
     </div>
 </nav>
 <!-- ==== End Navbar ==== -->
+<section class="kobasisicep " style="margin-top: 250px">
+    <div class="container ">
+        <div class="">
+            <div class="col-lg-10 expla-kobasis">
+                <div class="blog-one__single">
+                    <div class="blog-one__image">
+
+                    </div>
+                    <div class="" >
+                        <img src="img/ittsar/sar-01.jpg" width="910" style="border-radius: 15px">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="blog-details mt-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-10">
                 <div class="blog-one__single">
                     <div class="blog-one__image">
-                        <img src="/assets/images/projects/kobasis/kobasis_dashboard_desktop.png" alt="" />
+
                     </div>
-                    <div class="blog-one__content">
+                    <div class="blog-one__content" style="border-radius: 15px">
 
-                        <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px"> İTT SAR
-                        </h1>
-                        <a class="row" style="color: #34B1C4 ;font-size: 24px; font-weight: bold; padding-left: 105px; top: 0; height: 50px">Afet Yönetimi!</a>
-                        <h6 class="" style="margin-bottom: 50px; margin-top: 30px;color: #0b0b0b">
-                            Afet Yönetiminde Devrim...
+                        <div class="kobasis-header">
+                            <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px ; padding-right:50px " >  <img src="">  <span class="kobasis">SAR</span>
+                            </h1>
+                        </div>
+                        <a class="row explanation"  style="color: #34B1C4 ;font-size: 17px; font-weight: bold; padding-left: 155px; top: 0; height: 50px"></a>
+                        <div class="ne">
 
+                            <div class="title-kolay">
+                                AFET YÖNETİMİ
+                            </div>
+                        </div>
+                        <h6 class=" " style="margin-bottom: 35px; font-size: 14px; margin-top: 30px;color: #0b0b0b ; padding: 0 40px; display: flex; align-items: center; justify-content: end; text-align: end">
+                            Afet Yönetiminde Devrim
                         </h6>
-                        <p class="blog-one__text">Stok yönetimi ve aynî bağış süreçleri artık daha verimli, kolay ve güvenilir bir şekilde yönetiliyor!
-                            ABASİS, özellikle dernekler, vakıflar, kurumlar ve bağış toplama organizasyonları için geliştirilmiş web tabanlı bir uygulamadır. Güçlü özellikleri sayesinde stok takibi, dağıtım, başğışçı ve bağış alan kişilerin takibi, bağış yönetimi kapama formu düzenleme ve raporlama süreçlerinizi optimize eder.
+                        <p style="padding: 0 50px" class="blog-one__text">
+                            <span style="color: #0b0b0b;font-size: 19px">Küçük Ölçekte Büyük Değişiklikler:</span>
+                            <br/>
+                            Afet yönetimi daha etkin ve verimli hale geliyor! Türkiye'de ilk ve tek olan ITT SAR, arama kurtarma ekiplerinin yönetimini kökten değiştiriyor. ITT SAR, personel kaydından ekipman envanterine, saha yönetiminden eğitim modülüne kadar her şeyi kapsayan bir çözüm sunuyor.
                             <br/><br/>
-                            Küçük Ölçekte Büyük Değişiklikler: Afet yönetimi artık daha etkili ve verimli bir hale geliyor! Türkiye’de bir ilk ve tek olan ITT SAR, arama kurtarma takımlarının yönetimini kökten değiştiriyor. ITT SAR, personel kaydından teçhizat envanterine, saha yönetiminden eğitim modülüne kadar her şeyi kapsayan bir çözüm sunuyor.
+                            <span style="color: #0b0b0b;font-size: 19px">Personel Kaydı Modülü: Her Bilgi Bir Tık Uzağınızda</span>
+                            <br/>
+                            Personel kayıt modülü, arama kurtarma ekiplerinin her üyesinin ayrıntılı kayıt- larını tutmanıza olanak tanır. Beden numaralarından eğitim geçmişlerine, sahip oldukları yeteneklerden zimmetlerindeki teçhizata kadar her şeyi detaylı bir şekilde kaydedebilirsiniz. İhtiyacınıza özel raporlar ile verileri anında analiz edebilirsiniz.
                             <br/><br/>
-                            Personel Kaydı Modülü: Her Bilgi Bir Tık Uzağınızda Personel kaydı modülü, arama kurtarma ekiplerinin her üyesinin ayrıntılı kayıtlarını tutmanızı sağlar. Beden numaralarından eğitim geçmişlerine, sahip oldukları yeteneklerden zimmetlerindeki techizata kadar her şeyi detaylı bir şekilde kaydedebilirsiniz. İhtiyaca özel raporlar ile verileri anında analiz edebilirsiniz.
+                            <span style="color: #0b0b0b;font-size: 19px">Techizat Kaydı: Hazır ve Güncel Tutun</span>
+                            <br/>
+                            Arama kurtarma ekiplerinin işlerini kolaylaştıran teçhizat kayıt modülü, tüm ekipmanların envanterini ayrıntılı olarak takip eder. Bakım ve onarım kayıt- larıyla birlikte, ekipman kullanılabilirliğini en üst düzeyde tutmanıza yardımcı olur.
                             <br/><br/>
-                            Techizat Kaydı: Hazır ve Güncel Tutun Arama kurtarma ekiplerinin işlerini kolaylaştıran techizat kaydı modülü, tüm ekipmanların envanterini detaylı bir şekilde takip eder. Bakım ve onarım kayıtlarıyla birlikte, donanımın kullanılabilirliğini en üst düzeyde tutmanıza yardımcı olur.
+                            <span style="color: #0b0b0b;font-size: 19px">Saha Yönetim Sistemi: Acil Durumlara Anında Müdahale</span>
+                            <br/>
+                            Saha yönetimi, afet durumlarında hızlı ve etkin çalışmanızı sağlar. Özel bir sistem ile sahada bulunan ekiplerin, üyelerin ve teçhizatların konum bilgileri anlık olarak takip edilebilir. GPS sinyalleri alınamadığı ya da baz istasyonları- nın çalışmadığı durumlarda dahi iletişim kesintiye uğramaz, böylece acil çağrılara hızlı bir şekilde yanıt verilebilir. Ayrıca bu sistemde personelin sağlık verilerini izlemek de mümkündür.
                             <br/><br/>
-                            Saha Yönetim Sistemi: Acil Durumlara Anında Müdahale Saha yönetimi, afet durumlarında hızlı ve etkili bir şekilde çalışmanızı sağlar. Özel bir sistem ile sahada bulunan ekiplerin, üyelerin ve techizatların konum bilgileri anında takip edilir. GPS sinyali alınamadığında, Baz istasyonları çalışmadığında dahi iletişim kesilmez, böylece acil durum çağrılarına hızla yanıt verilir. Ayrıca bu sistemde personelin sağlık verilerini izlemek de mümkündür.
+                            <span style="color: #0b0b0b;font-size: 19px">Eğitim Modülü: Daima Hazır!</span>
+                            <br/>
+                            ITT SAR, arama kurtarma personelinin ihtiyaç duyduğu eğitim programlarını yapay zeka yardımıyla oluşturuyor. Bu sayede ekipler devamlı olarak eğitim programına tabi tutularak her zaman göreve hazır durumda olurlar.
                             <br/><br/>
-                            Eğitim Modülü: Daima Hazır! ITT SAR, arama kurtarma personelinin ihtiyaç duydukları eğitim programlarını yapay zeka yardımıyla oluşturur. Bu sayede personel her zaman en iyi şekilde eğitilir ve göreve hazır durumda olurlar.
-                            <br/><br/>
-                            ITT SAR İle Kahramanlarımızın Yanındayız Zor zamanlarda kahramanlarımızı yalnız bırakmıyoruz. ITT SAR, afet yönetiminde çığır açan bir yazılım çözümüdür. Türkiye’de ilk ve tek olan bu yazılım, arama kurtarma ekiplerinin daha hızlı ve daha etkili bir şekilde çalışmalarını sağlar. Her adımda güvenliği ve verimliliği ön planda tutar. ITT SAR ile afetlerde hayat kurtarmak daha da kolay. Daha Fazla Bilgi ve Demo Talebi İçin Bize Ulaşın
+                            <span style="color: #0b0b0b;font-size: 19px">ITT SAR İle Kahramanlarımızın Yanındayız</span>
+                            <br/>
+                            Zor zamanlarda kahramanlarımızı yalnız bırakmıyoruz. ITT SAR, afet yönetiminde çığır açan bir yazılım çözümüdür. Türkiye'de ilk ve tek olan bu yazılım, arama kurtarma ekiplerinin daha hızlı ve etkin çalışmasını sağlıyor. Her adımda güvenliği ve verimliliği ön planda tutuyor. ITT SAR ile afetlerde hayat kurtarmak artık daha da kolay.
+                            <br/>
+                            Daha Fazla Bilgi ve Demo Talebi İçin Bize Ulaşın.
                             <br/><br/>
 
                         </p>
-
                     </div>
                 </div>
                 <div class="share-block">
@@ -1121,7 +1190,6 @@
                             <form action="https://www.linkedin.com/company/itt-teknoloji/" class="mailchimp-one__mc-form mc-form ml-4">
                                 <button href="" type="submit"><img class="pb-2" src="img/icos/icons8-linkedin-36.png"></button>
                             </form>
-
                         </div>
                     </div>
                     <div>
@@ -1131,17 +1199,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4" style="margin-top: 150px">
-                <div class="sidebar pl-2">
-                    <div class="sidebar__single sidebar__post" >
-                        <img class="pc" src="img/ittsar/istockphoto-115895318-612x612.jpg" width="500px">
 
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
+
+
+
 <!-- ==== Start Footer ==== -->
 <footer class="bg-footer">
     <div class="container ">
@@ -1156,7 +1220,7 @@
                 <div>
                     <h6 class="footer-heading text-uppercase text-white">Bizi Keşfedin</h6>
                     <ul class="list-unstyled footer-link mt-4">
-                        <li><a href="#misyonvizyon">Hakkımızda</a></li>
+                        <li><a href="index.html">Hakkımızda</a></li>
                         <li><a href="kobasis.html">Projeler</a></li>
                         <li><a  href="https://stackshare.io/itt-teknoloji-as/itt-teknoloji">Geliştirici</a></li>
                     </ul>
@@ -1165,7 +1229,7 @@
 
             <div class="col-lg-3 mt-5">
                 <div>
-                    <h6 class="footer-heading text-uppercase text-white">Projelerimiz</h6>
+                    <h6 class="footer-heading text-uppercase text-white" >Projelerimiz</h6>
                     <ul class="list-unstyled footer-link mt-4">
                         <li><a href="ittaid.html">AİD360</a></li>
                         <li><a href="kobasis.html">KOBASİS</a></li>

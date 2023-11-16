@@ -385,21 +385,23 @@
             border-top: 0;
             -webkit-transition: all .4s ease;
             transition: all .4s ease;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            padding: 0 50px;
+            border-radius: 15px;
+            /*padding: 0 50px;*/
+            /*padding-top: 45px;*/
+            padding-bottom: 40px;
+        }
+        .blog-one__content {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #efefef;
+            background-color: white;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+            border-radius: 15px;
             padding-top: 45px;
             padding-bottom: 40px;
         }
-        .blog-one__meta {
-            margin: 0;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-        }
+
         .blog-one__meta li {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -486,8 +488,8 @@
             margin-bottom: 28px;
         }
         .blog-details .blog-one__content {
-            padding-left: 50px;
-            padding-right: 50px;
+            /*padding-left: 50px;*/
+            /*padding-right: 50px;*/
             border-radius: 0;
             -webkit-box-shadow: none !important;
             box-shadow: none !important;
@@ -520,8 +522,8 @@
             padding: 50px;
             border: 1px solid #efefef;
             border-top: 0;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
         }
         .blog-details .share-block .left-block p {
             margin: 0;
@@ -856,7 +858,7 @@
             -webkit-transition: background .4s ease, color .4s ease;
             transition: background .4s ease, color .4s ease;
             /*background-image: -webkit-gradient(linear, left top, right top, from(#34b1c4), to(#0a2e44));*/
-            background-image: linear-gradient(90deg, #34b1c4 0%, #0a2e44 100%);
+            background-image: linear-gradient(90deg, #0ab0ce 0%, #19afe6 100%);
             position: relative;
         }
         .mailchimp-one__mc-form button[type=submit] {
@@ -864,8 +866,8 @@
             outline: none;
             width: 61px;
             height: 61px;
-            background-image: -webkit-gradient(linear, left top, right top, from(#34b1c4), color-stop(51%, #0a2e44));
-            background-image: linear-gradient(to right, #34b1c4 0%, #0a2e44 51%, #34b1c4 100%);
+            background-image: -webkit-gradient(linear, left top, right top, from(#0ab0ce), color-stop(51%, #19afe6));
+            background-image: linear-gradient(to right, #0ab0ce 0%, #19afe6 51%, #0ab0ce 100%);
             background-size: 200% auto;
             border-radius: 50%;
             font-size: 22px;
@@ -994,6 +996,55 @@
             display: block;
             /*border-bottom: 1px solid #34b1c4;*/
         }
+        .kobasis-header{
+            display: flex;
+            justify-content: end;
+        }
+        .kobasis{
+            height: 25px;
+            width: 200px;
+            background-image: -webkit-gradient(linear, left top, right top, from(#0ab0ce), color-stop(51%, #19afe6));
+            background-image: linear-gradient(to right, #0ab0ce 0%, #19afe6 85% );
+            color: #FFFFFF;
+            border-radius: 14px;
+            font-size: 50px;
+            padding: 10px;
+
+        }
+        .title-line{
+            z-index: -40;
+            height: 40px;
+            width: 100%;
+            background-image: -webkit-gradient(linear, left top, right top, from(#0ab0ce), color-stop(51%, #19afe6));
+            background-image: linear-gradient(to right, #0ab0ce 0%, #19afe6 51%, #0ab0ce 100%);
+            background-size: 200% auto;
+        }
+        .title-kolay{
+            margin-top: 30px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding: 0 50px;
+            font-size: 30px;
+            font-weight: 500;
+            padding-top: 3px;
+        }
+        .kobasis-header{
+            display: flex;
+            justify-content: end;
+        }
+        .road-map{
+            /*padding: 120px 0;*/
+            margin-top: 70px;
+            width: 100%;
+        }
+        .kobasisicep{
+            margin-bottom: 100px;
+        }
+        .kbs-road-map{
+            margin-top: 100px;
+        }
 
 
     </style>
@@ -1062,7 +1113,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                    <a class="nav-link" href="iletişim.html">İletişim</a>
                 </li>
 <!--                <li class="nav-item">-->
 <!--                    <a class="nav-link" href="mailto:info@ittyazilim.com">-->
@@ -1077,27 +1128,67 @@
     </div>
 </nav>
 <!-- ==== End Navbar ==== -->
+<section class="road-map">
+    <div class="container ">
+        <div class="col-lg-10">
+            <div class=" expla-kobasis">
+                <div class="blog-one__single">
+                    <div class="blog-one__image">
+                        <img src="img/kobasis/" alt="" />
+                    </div>
+                    <div class="container  kbs-road-map ">
+                        <div class="kobasis-header ">
+                            <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px ;padding-right: 30px ">  İTT  <span class="kobasis">ABASİS </span>
+                                <br>
+                                <div style="display: flex ; align-items: center; justify-content: end">
+                                    <a style="font-size: 20px;  margin-top: 20px ;margin-right: 10px">AYNİ BAĞIŞ  SİSTEMİ</a>
+                                </div>
+                            </h1>
+
+                        </div>
+                        <!--                        <a class="row explanation"  style="color: #34B1C4 ;font-size: 17px; font-weight: bold; padding-left: 155px; top: 0; height: 50px"></a>-->
+                        <!--                        <div class="title-line">-->
+
+                        <!--                            <div class="title-kolay">-->
+                        <!--                                Kolay Bağış Sistemi-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                    </div>
+                    <div class="col-lg-10 mt-5" >
+                        <img src="img/abasis/abasisnasılçalışır-01.jpg" width="895">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="blog-details mt-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-10">
                 <div class="blog-one__single">
                     <div class="blog-one__image">
-                        <img src="/assets/images/projects/kobasis/kobasis_dashboard_desktop.png" alt="" />
+
                     </div>
-                    <div class="blog-one__content">
+                    <div class="blog-one__content" style="border-radius: 15px">
 
-                        <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px"> İTT ABASİS
-                        </h1>
-                        <a class="row explanation" style="color: #34B1C4 ;font-size: 24px; font-weight: bold; padding-left: 105px; top: 0; height: 50px">Ayni Bağış Sistemi!</a>
+                        <div class="kobasis-header">
+                            <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px; padding-right: 30px">  İTT  <span class="kobasis">ABASİS</span>
+                            </h1>
+                        </div>
+                        <a class="row explanation"  style="color: #34B1C4 ;font-size: 17px; font-weight: bold; padding-left: 155px; top: 0; height: 50px"></a>
+                        <div class="title-line">
 
-                        <h6 class="" style="margin-bottom: 50px; margin-top: 30px;color: #0b0b0b">
-                            Derneklerin ve Vakıfların <br>
-                           Ayni bağış yöntemini kolaylaştırıyoruz...
-
+                            <div class="title-kolay">
+                                Ayni Bağış Yönetim Sistemi
+                            </div>
+                        </div>
+                        <h6 class=" " style="margin-bottom: 35px; font-size: 14px; margin-top: 30px;color: #0b0b0b ; padding: 0 40px; display: flex; align-items: center; justify-content: end; text-align: end">
+                           Depo Yönetimine Yenilikçi Çözüm
                         </h6>
-                        <p class="blog-one__text">Stok yönetimi ve aynî bağış süreçleri artık daha verimli, kolay ve güvenilir bir şekilde yönetiliyor!
+                        <p style="padding: 0 50px" class="blog-one__text">Stok yönetimi ve aynî bağış süreçleri artık daha verimli, kolay ve güvenilir bir şekilde yönetiliyor!
                             ABASİS, özellikle dernekler, vakıflar, kurumlar ve bağış toplama organizasyonları için geliştirilmiş web tabanlı bir uygulamadır. Güçlü özellikleri sayesinde stok takibi, dağıtım, başğışçı ve bağış alan kişilerin takibi, bağış yönetimi kapama formu düzenleme ve raporlama süreçlerinizi optimize eder.
                             <br/><br/>
                             <span style="color: #0b0b0b;font-size: 19px">Ayrıntılı Raporlama Ekranları:</span>
@@ -1131,9 +1222,7 @@
                              Barkod sistemi sayesinde ayni bağışları hızla tanımlayabilir, takip edebilir ve doğrulayabilirsiniz.
                             <br/><br/>
                             ABASİS ile stok yönetiminizdeki karmaşıklığı ortadan kaldırın, süreçleri optimize edin ve daha etkin bir bağış yönetimi sağlayın! Detaylı bilgi ve demo talepleri için bize ulaşabilirsiniz.
-
                         </p>
-
                     </div>
                 </div>
                 <div class="share-block">
@@ -1142,7 +1231,6 @@
                             <form action="https://www.linkedin.com/company/itt-teknoloji/" class="mailchimp-one__mc-form mc-form ml-4">
                                 <button href="" type="submit"><img class="pb-2" src="img/icos/icons8-linkedin-36.png"></button>
                             </form>
-
                         </div>
                     </div>
                     <div>
@@ -1152,16 +1240,29 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="sidebar">
-                    <div class="sidebar__single sidebar__post">
-                        <img class="pc" src="img/abasis/abasis-02.png" width="650px">
+
+        </div>
+    </div>
+</section>
+
+<section class="kobasisicep">
+    <div class="container ">
+        <div class="">
+            <div class="col-lg-10 expla-kobasis">
+                <div class="blog-one__single">
+                    <div class="blog-one__image">
+
+                    </div>
+                    <div class="" >
+                        <img src="img/abasis/kobasissayfası-01.jpg" width="910" style="border-radius: 15px">
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 </section>
+
 <!-- ==== Start Footer ==== -->
 <footer class="bg-footer">
     <div class="container ">
