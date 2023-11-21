@@ -35,7 +35,7 @@ body {
 [1. Start Navbar]
 --------------------------------------------------*/
 .navbar {
-    background: #192b3c;;
+    background: #19afe6;;
     padding: 20px 0;
     border-bottom: 3px double rgba(255, 255, 255, 0.06);
 }
@@ -51,7 +51,7 @@ body {
     margin: 0;
     border-left: .5px solid rgba(255, 255, 255, 0.06);
     font-size: 14px;
-    color: #c7d3dd;
+    color: #FFFFFF;
     font-weight: 500;
     transition: all .4s ease-in-out;
 }
@@ -61,7 +61,7 @@ body {
 }
 
 .navbar .nav-item .nav-link:hover {
-    color: #2AAFC0;
+    /*color: #2AAFC0;*/
 }
 
 .navbar .navbar-nav .dropdown .dropdown-menu {
@@ -81,7 +81,7 @@ body {
 }
 
 .navbar .navbar-nav .dropdown .dropdown-menu a:hover {
-    background: #13b1c5;
+    /*background: #13b1c5;*/
 }
 
 
@@ -134,15 +134,15 @@ body {
     border-radius: 35px;
     font-size: 14px;
     font-weight: 300;
-    background: #2AAFC0;
+    background: #19afe6;
     color: #ffffff;
     margin: 0;
-    border: 1px solid #2AAFC0;
+    border: 1px solid #19afe6;
     transition: all .6s ease-in-out;
 }
 
 .slider .content .btn:hover {
-    background: transparent;
+    /*background: transparent;*/
     border: 1px solid #fff;
 }
 
@@ -325,7 +325,7 @@ body {
 --------------------------------------------------*/
 .get-started {
     padding: 130px 0 130px 0;
-    background-image: linear-gradient(40deg, #34b1c4 0%, #0a2e44 100%);
+    background-image: linear-gradient(40deg, #0ab0ce 0%, #19afe6 100%);
     background-size: cover;
 }
 
