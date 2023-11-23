@@ -350,7 +350,7 @@
 
         .blog-one__single {
             position: relative;
-            margin-bottom: 30px;
+
         }
         .blog-one__single:hover .blog-one__more-link {
             color: #fff;
@@ -384,7 +384,7 @@
             border-top: 0;
             -webkit-transition: all .4s ease;
             transition: all .4s ease;
-            border-radius: 15px;,
+
             /*padding: 0 50px;*/
             /*padding-top: 45px;*/
             padding-bottom: 40px;
@@ -396,7 +396,8 @@
             background-color: white;
             -webkit-transition: all .4s ease;
             transition: all .4s ease;
-            border-radius: 15px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
             padding-top: 45px;
             padding-bottom: 40px;
         }
@@ -950,9 +951,64 @@
             display: flex;
             justify-content: end;
         }
-        .blog-data{
-           padding: 150px 0;
-        }
+      .reply-form__field{
+                border: none;
+                outline: none;
+                width: 100%;
+                display: block;
+                height: 55px;
+                color: #74727a;
+                font-size: 16px;
+                padding-left: 30px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #34B1C4FF ;
+                border-radius: 5px;
+                background-color: #ffffff;
+                margin-bottom: 30px;
+            }
+            .popup {
+                border-radius: 10px;
+                width: 500px;
+                height: 650px;
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                z-index: 999;
+            }
+
+            .popup-content {
+                text-align: center;
+            }
+
+            #closePopup {
+                margin-top: 10px;
+                cursor: pointer;
+            }
+
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 998;
+            }
+            .blog-details .share-block .social-block {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
 
 
     </style>
@@ -1008,17 +1064,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item mt-2">
-                    <div class="topnav " id="myTopnav">
-                        <div class="dropdown " style="display: block">
-                            <button class="dropbtn nav-link" style="display: block">Geliştirici
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content mb-5">
-                                <a class="mb-3 pl-3" href="https://stackshare.io/itt-teknoloji-as/itt-teknoloji" style="display: block">Kullandığımız Teknolojiler</a>
-                            </div>
-                        </div>
-                    </div>
+                <li class="nav-item ">
+                    <a class="nav-link" href="https://stackshare.io/itt-teknoloji-as/itt-teknoloji" style="display: block"> Geliştirici</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="takım.html">Takım</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="iletişim.html">İletişim</a>
@@ -1044,7 +1094,7 @@
                     <div class="blog-one__image">
 
                     </div>
-                    <div class="blog-one__content" style="border-radius: 15px;">
+                    <div class="blog-one__content" style="">
 
                         <div class="kobasis-header">
                             <div class="kobasis-header col-12">
@@ -1146,21 +1196,96 @@
                         </p>
                     </div>
 
+
                 </div>
-<!--                <div class="share-block">-->
-<!--                    <div class="social-block">-->
-<!--                        <div class="container">-->
-<!--                            <form action="https://www.linkedin.com/company/itt-teknoloji/" class="mailchimp-one__mc-form mc-form ml-4">-->
-<!--                                <button href="" type="submit"><img class="pb-2" src="img/icos/icons8-linkedin-36.png"></button>-->
-<!--                            </form>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div>-->
-<!--                        <button  class="reply-form__btn thm-btn" type="submit">-->
-<!--                            <span>Hemen İzle</span>-->
-<!--                        </button>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="share-block" style=" display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                padding: 50px;
+                border: 1px solid #efefef;
+                border-top: 0;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;">
+
+                    <div>
+                        <button  class="reply-form__btn thm-btn" type="submit">
+                            <span>Tanıtım Video</span>
+                        </button>
+                    </div>
+
+                    <div>
+                        <button  class="reply-form__btn thm-btn" type="submit">
+                            <span>Tutorial Video</span>
+                        </button>
+                    </div>
+
+                    <div>
+                        <button class="reply-form__btn thm-btn" id="demoBtn" type="button">
+                            <span>Demo İste</span>
+                        </button>
+                    </div>
+
+                    <div style="">
+                        <div class="popup mt-5" id="demoPopup">
+                            <div class="popup-content">
+                                <!-- Popup içeriği buraya eklenecek -->
+                                <div class=" w-100">
+                                    <h4 style="margin-bottom: 40px; margin-top: 20px">DEMO İSTE</h4>
+                                    <div class="">
+                                        <input name="name" id="name" required type="text" placeholder="AdıSoyad" class="reply-form__field" />
+                                    </div>
+                                    <div class="">
+                                        <input name="email" id="email" required type="text" placeholder="E-Posta " class="reply-form__field" />
+                                        <input name="phone" id="phone" required type="text" placeholder="Telefon No" class="reply-form__field" />
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center mb-5 mt-4  " >
+
+                                        <div  class="w-50 flex-column" style="">
+                                            <label class="container">AİD365
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">KOBASİS
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">ABASİS
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                        </div>
+                                        <div class="w-50 flex-column" style="">
+                                            <label class="container">KURBAN VİDEO
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">İTT-SAR
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-12" style="display: flex;align-items: center;justify-content: center">
+                                        <button id="closePopup" class="reply-form__btn thm-btn" type="submit" >
+                                            <span >Hemen Başvur</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
@@ -1248,5 +1373,18 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <!-- Main Js -->
 <script src="js/main.js"></script>
+<script>
+    document.getElementById("demoBtn").addEventListener("click", function() {
+        document.getElementById("demoPopup").style.display = "block";
+        document.body.style.overflow = "hidden"; // Sayfanın arka planını kaydırmayı engelle
+        document.querySelector(".overlay").style.display = "block";
+    });
+
+    document.getElementById("closePopup").addEventListener("click", function() {
+        document.getElementById("demoPopup").style.display = "none";
+        document.body.style.overflow = "auto"; // Sayfanın arka planını tekrar kaydırabilir yap
+        document.querySelector(".overlay").style.display = "none";
+    });
+</script>
 </body>
 </html>

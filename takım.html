@@ -945,29 +945,6 @@
             display: block;
             /*border-bottom: 1px solid #34b1c4;*/
         }
-        .kobasis-header{
-            display: flex;
-            justify-content: end;
-        }
-        .kobasis{
-            height: 25px;
-            width: 200px;
-            background-image: -webkit-gradient(linear, left top, right top, from(#0ab0ce), color-stop(51%, #19afe6));
-            background-image: linear-gradient(to right, #0ab0ce 0%, #19afe6 85% );
-            color: #FFFFFF;
-            border-radius: 14px;
-            font-size: 50px;
-            padding: 10px;
-
-        }
-        .ne{
-            z-index: -40;
-            height: 40px;
-            width: 100%;
-            background-image: -webkit-gradient(linear, left top, right top, from(#0ab0ce), color-stop(51%, #19afe6));
-            background-image: linear-gradient(to right, #0ab0ce 0%, #19afe6 51%, #0ab0ce 100%);
-            background-size: 200% auto;
-        }
 
         .takım{
             margin-bottom: 48px;
@@ -1003,6 +980,46 @@
         .expenses{
             font-size: 20px;
         }
+        .ekip{
+            gap: 10px 20px;
+            /*grid-template-columns: repeat(4,minmax(0,1fr));*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .user{
+
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.875rem; /* 3.5 units converted to rem */
+            height: 250px;
+            border-radius: 0.75rem; /* rounded-xl converted to rem */
+            background-color: #fff; /* Assuming bg-white corresponds to a white background */
+            padding: 1rem; /* 4 units converted to rem */
+
+        }
+        .userx{
+
+
+            transition: 0.3s;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.875rem; /* 3.5 units converted to rem */
+            height: 250px;
+            border-radius: 0.75rem; /* rounded-xl converted to rem */
+            background-color: #fff; /* Assuming bg-white corresponds to a white background */
+            padding: 1rem;
+        }
+
 
 
     </style>
@@ -1058,17 +1075,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item mt-2">
-                    <div class="topnav " id="myTopnav">
-                        <div class="dropdown " style="display: block">
-                            <button class="dropbtn nav-link" style="display: block">Geliştirici
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content mb-5">
-                                <a class="mb-3 pl-3" href="https://stackshare.io/itt-teknoloji-as/itt-teknoloji" style="display: block">Kullandığımız Teknolojiler</a>
-                            </div>
-                        </div>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://stackshare.io/itt-teknoloji-as/itt-teknoloji" style="display: block"> Geliştirici</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="takım.html">Takım</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="iletişim.html">İletişim</a>
@@ -1085,27 +1096,27 @@
         </div>
     </div>
 </nav>
-<section class="kobasisicep " style="margin-top: 250px">
-    <div class="container ">
-        <div class="">
-            <div class="col-lg-10 expla-kobasis">
-                <div class="blog-one__single">
-                    <div class="blog-one__image">
+<!--<section class="kobasisicep " style="margin-top: 250px">-->
+<!--    <div class="container ">-->
+<!--        <div class="">-->
+<!--            <div class="col-lg-10 expla-kobasis">-->
+<!--                <div class="blog-one__single">-->
+<!--                    <div class="blog-one__image">-->
 
-                    </div>
-                    <div class="" >
-                        <img src="img/ittsar/sar-01.jpg" width="910" style="border-radius: 15px">
-                    </div>
-                </div>
+<!--                    </div>-->
+<!--                    <div class="" >-->
+<!--                        <img src="img/ittsar/sar-01.jpg" width="910" style="border-radius: 15px">-->
+<!--                    </div>-->
+<!--                </div>-->
 
-            </div>
-        </div>
-    </div>
-</section>
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
-<section class=" takım">
+<section class=" takım " style="margin-top: 200px ;margin-bottom: 200px">
     <div class="takım-header">
-        <h1 class="title">Takımızla Tanışın</h1>
+        <h1 class="title">Ekibimizle Tanışın</h1>
         <div class="separator_wrapper">
             <div class="çizgi"></div>
             <img class="star" src="img/star-24.ico">
@@ -1113,7 +1124,60 @@
         </div>
         <p class="expenses">Etik yazılım geliştirmeye, zanaatkârlığa, profesyonelliğe değer veriyor, çevik ve yalın bir zihniyetle yazılım geliştirme kültürüne ve sürekli hizmete inanıyoruz.</p>
     </div>
-    <div class=""></div>
+    <div class="ekip">
+        <div class="user">
+         <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-22%2011.41.03.jpg" style="border-radius: 90px">
+         <h5 class="" style="font-size: 20px; line-height:28px ">Muhittin Uzun</h5>
+         <p class="" style="text-align: center; font-size: 20px">Kurucu</p>
+     </div>
+        <div class="user">
+            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/bünyadahmedlifotoğraf.jpg" style="border-radius: 90px">
+            <h5 class="" style="font-size: 20px; line-height:28px ">Bunyad Ahmadli</h5>
+            <p class="" style="text-align: center; font-size: 20px">Takım Lideri</p>
+        </div>
+        <div class="user">
+            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-22%2011.12.14.jpg" style="border-radius: 90px">
+            <h5 class="" style="font-size: 20px; line-height:28px ">Arif Darıyemez</h5>
+            <p class="" style="text-align: center; font-size: 20px">Endüstri Mühendisi</p>
+        </div>
+
+    </div>
+    <div class="ekip">
+        <div class="user">
+            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/IMG_0192.jpg" style="border-radius: 90px">
+            <h5 class="" style="font-size: 20px; line-height:28px ">Kadir Kılıç</h5>
+            <p class="" style="text-align: center; font-size: 20px">Front-End Developer</p>
+        </div>
+        <div class="user">
+            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/mustafaGünayFotoğraf.jpg" style="border-radius: 90px">
+            <h5 class="" style="font-size: 20px; line-height:28px ">Mustafa Günay</h5>
+            <p class="" style="text-align: center; font-size: 20px">Front-End Developer</p>
+        </div>
+        <div class="user">
+            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-2212.46.29.jpg" style="border-radius: 90px">
+            <h5 class="" style="font-size: 20px; line-height:28px ">Ali Ay</h5>
+            <p class="" style="text-align: center; font-size: 20px">Front-End Developer</p>
+        </div>
+    </div>
+    <div class="ekip">
+        <div class="user">
+            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/yusuferkandarıyemezfotoğraf.jpg" style="border-radius: 90px">
+            <h5 class="" style="font-size: 20px; line-height:28px ">Yusuf Darıyemez </h5>
+            <p class="" style="text-align: center; font-size: 20px">Backend Developer</p>
+        </div>
+        <div class="user">
+            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-2212.44.43.jpg" style="border-radius: 90px">
+            <h5 class="" style="font-size: 20px; line-height:28px ">Hasan Aygün</h5>
+            <p class="" style="text-align: center; font-size: 20px">Backend Developer</p>
+        </div>
+        <div class="userx">
+<!--            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-2212.44.43.jpg" style="border-radius: 90px">-->
+<!--            <h5 class="" style="font-size: 20px; line-height:28px ">Hasan Aygün</h5>-->
+<!--            <p class="" style="text-align: center; font-size: 20px">Backend Developer</p>-->
+        </div>
+
+
+    </div>
 </section>
 
 <!-- ==== Start Footer ==== -->
@@ -1160,7 +1224,7 @@
                             </a>
                         </li>
                         <li><a href="https://maps.app.goo.gl/Fnwq5TU7hQUjBvoH9">Bilişim Vadisi - Gebze/Kocaeli
-                            <img class="footer-link" src="img/icons8-location-30.png" style="margin-bottom: 10px"></a></li>
+                            <img class="footer-link" src="img/index/icons8-location-100.png" width="25"  style="margin-bottom: 10px"></a></li>
                     </ul>
                 </div>
             </div>
