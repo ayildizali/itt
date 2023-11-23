@@ -1315,6 +1315,113 @@
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 998;
         }
+        @media (max-width: 768px) {
+            .kobasisicep {
+                margin-top: 150px; /* Adjust as needed for smaller screens */
+            }
+
+            .expla-kobasis {
+                padding: 0 10px; /* Adjust as needed for smaller screens */
+            }
+
+            .foto-1 {
+                width: 100%; /* Make the image take the full width of its container */
+                border-radius: 0; /* Remove border-radius for smaller screens or adjust as needed */
+            }
+            .road-map {
+                /* Adjust padding for larger screens */
+            }
+
+            .expla-kobasis {
+                /* Increase padding for larger screens */
+            }
+
+            .blog-one__title {
+                font-size: 70px; /* Increase font size for larger screens */
+            }
+
+            .kobasis-foto img {
+                width: 100%; /* Make the image take the full width of its container */
+            }
+            .title-line{
+                margin-top: 100px;
+            }
+            .kobasis-header{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+            }
+            .kobasis{
+
+            }
+            .blog-one__title{
+
+            }
+            .popup-content{
+                height: 500px;
+                margin: auto;
+                width: 300px;
+                margin-bottom: 30px;
+            }
+
+
+        }
+        @media (max-width: 991.98px) {
+            .kobasisicep {
+                margin-top: 150px; /* Adjust as needed for smaller screens */
+            }
+
+            .expla-kobasis {
+                padding: 0 10px; /* Adjust as needed for smaller screens */
+            }
+
+            .foto-1 {
+                width: 100%; /* Make the image take the full width of its container */
+                border-radius: 0; /* Remove border-radius for smaller screens or adjust as needed */
+            }
+            .road-map {
+                /* Adjust padding for larger screens */
+            }
+
+            .expla-kobasis {
+                /* Increase padding for larger screens */
+            }
+
+            .blog-one__title {
+                font-size: 70px; /* Increase font size for larger screens */
+            }
+
+            .kobasis-foto img {
+                width: 100%; /* Make the image take the full width of its container */
+            }
+            .title-line{
+                margin-top: 100px;
+            }
+            .kobasis-header{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+            }
+            .kobasis{
+
+            }
+            .blog-one__title{
+
+            }
+            .popup-content{
+                height: 500px;
+                margin: auto;
+                width: 300px;
+                margin-bottom: 30px;
+            }
+
+        }
+
+
 
 
     </style>
@@ -1396,8 +1503,8 @@
                     <div class="blog-one__image">
                         <img src="img/kobasis/" alt="" />
                     </div>
-                    <div class="" >
-                        <img src="img/kobasis/kobasiscep-01.jpg" width="895" style="border-radius: 15px">
+                    <div class="kobasis-tel" >
+                        <img class="foto-1" src="img/kobasis/kobasiscep-01.jpg" width="895" style="border-radius: 15px">
                     </div>
                 </div>
 
@@ -1414,16 +1521,16 @@
                     <div class="blog-one__image">
                         <img src="img/kobasis/" alt="" />
                     </div>
-                    <div class="container  kbs-road-map ">
-                        <div class="kobasis-header col-12">
-                            <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px;padding-right: 30px">  İTT  <span class="kobasis">KOBASİS </span>
-                               <br>
-                                <div style="display: flex ; align-items: center; justify-content: end">
-                                    <a style="font-size: 20px;  margin-top: 20px ;margin-right: 10px">KOLAY BAGIŞ SİSTEMİ</a>
-                                </div>
-                            </h1>
+<!--                    <div class="container  kbs-road-map ">-->
+<!--                        <div class="kobasis-header col-12">-->
+<!--                            <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px;padding-right: 30px">  İTT  <span class="kobasis">KOBASİS </span>-->
+<!--                               <br>-->
+<!--                                <div style="display: flex ; align-items: center; justify-content: end">-->
+<!--                                    <a style="font-size: 20px;  margin-top: 20px ;margin-right: 10px">KOLAY BAGIŞ SİSTEMİ</a>-->
+<!--                                </div>-->
+<!--                            </h1>-->
 
-                        </div>
+<!--                        </div>-->
 <!--                        <a class="row explanation"  style="color: #34B1C4 ;font-size: 17px; font-weight: bold; padding-left: 155px; top: 0; height: 50px"></a>-->
 <!--                        <div class="title-line">-->
 
@@ -1432,7 +1539,7 @@
 <!--                            </div>-->
 <!--                        </div>-->
                     </div>
-                    <div class="" >
+                    <div class="kobasis-foto" >
                         <img src="img/kobasis/kobasisnasılçalışır-01.jpg" width="895">
                     </div>
                 </div>
@@ -1504,13 +1611,13 @@
                         </button>
                     </div>
 
-                    <div>
+                    <div class="video">
                         <button  class="reply-form__btn thm-btn" type="submit">
                             <span>Tutorial Video</span>
                         </button>
                     </div>
 
-                    <div>
+                    <div  class="video">
                         <button class="reply-form__btn thm-btn" id="demoBtn" type="button">
                             <span>Demo İste</span>
                         </button>
@@ -1527,7 +1634,7 @@
                                             <input name="email" id="email" required type="text" placeholder="E-Posta " class="reply-form__field" />
                                             <input name="phone" id="phone" required type="text" placeholder="Telefon No" class="reply-form__field" />
                                         </div>
-                                        <div class="d-flex align-items-center justify-content-center mb-5 mt-4  " >
+                                        <div class=" sayfa d-flex align-items-center justify-content-center mb-5 mt-4  " >
 
                                             <div  class="w-50 flex-column" style="">
                                                 <label class="container">AİD365

@@ -1109,6 +1109,9 @@ body {
 [17. Start Media Query]
 --------------------------------------------------*/
 
+@media (max-width: 375px) {
+
+}
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     /* Navbar */
@@ -1193,7 +1196,7 @@ body {
 @media (max-width: 767.98px) {
     .navbar {
         padding: 20px;
-        background: #21353e !important;
+        background: #19afe6 !important;
     }
     .navbar .nav-item {
         margin-left: 0;
@@ -1259,7 +1262,7 @@ body {
         margin-bottom: 30px;
     }
     .expla-kobasis{
-
+      width: 100%;
     }
     .bg-footer{
         width: 100%;
@@ -1276,16 +1279,28 @@ body {
 
     }
     .explanation{
-        margin-top: 100px;
+        /*margin-top: 100px;*/
         padding: 0;
     }
+    .share-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:start ;
+
+    }
+    .video{
+        margin-top: 15px;
+    }
+
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     .navbar {
         padding: 20px;
-        background: #21353e !important;
+        background: #19afe6 !important;
     }
     .navbar .nav-item {
         margin-left: 0;
@@ -1316,7 +1331,6 @@ body {
     .price .box {
         margin-bottom: 30px;
     }
-
 }
 
 
@@ -1326,4 +1340,5 @@ body {
     .portfolio .button-group {
         width: 100%;
     }
+
 }

@@ -176,20 +176,7 @@
             line-height: 34px;
         }
         .share-block {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-            padding: 50px;
-            border: 1px solid #efefef;
-            border-top: 0;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+
         }
         .blog-details .share-block .social-block {
             display: -webkit-box;
@@ -1290,6 +1277,19 @@
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 998;
         }
+        @media (max-width: 768px){
+            .kurban-yol img{
+                width: 100%;
+            }
+            .foto img{
+                width: 100%;
+            }
+        }
+        @media (max-width: 991.98px){
+            .kurban-yol img{
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1380,7 +1380,7 @@
                             </h1>
                         </div>
                     </div>
-                    <div class="" >
+                    <div class="kurban-yol" >
                         <img src="img/kurban/kurbanvideonasılçalışır-01.jpg" width="895">
                     </div>
                 </div>
@@ -1470,7 +1470,82 @@
                 </div>
 
             </div>
-<!--            <div class="col-lg-4" style="margin-top: 150px">-->
+            <div class="share-block">
+
+                <div>
+                    <button  class="reply-form__btn thm-btn" type="submit">
+                        <span>Tanıtım Video</span>
+                    </button>
+                </div>
+
+                <div class="video">
+                    <button  class="reply-form__btn thm-btn" type="submit">
+                        <span>Tutorial Video</span>
+                    </button>
+                </div>
+
+                <div class="video">
+                    <button class="reply-form__btn thm-btn" id="demoBtn" type="button">
+                        <span>Demo İste</span>
+                    </button>
+                </div>
+
+                <div style="">
+                    <div class="popup mt-5" id="demoPopup">
+                        <div class="popup-content">
+                            <!-- Popup içeriği buraya eklenecek -->
+                            <div class=" w-100">
+                                <h4 style="margin-bottom: 40px; margin-top: 20px">DEMO İSTE</h4>
+                                <div class="">
+                                    <input name="name" id="name" required type="text" placeholder="AdıSoyad" class="reply-form__field" />
+                                </div>
+                                <div class="">
+                                    <input name="email" id="email" required type="text" placeholder="E-Posta " class="reply-form__field" />
+                                    <input name="phone" id="phone" required type="text" placeholder="Telefon No" class="reply-form__field" />
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-5 mt-4  " >
+
+                                    <div  class="w-50 flex-column" style="">
+                                        <label class="container">AİD365
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container">KOBASİS
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container">ABASİS
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </div>
+                                    <div class="w-50 flex-column" style="">
+                                        <label class="container">KURBAN VİDEO
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container">İTT-SAR
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container">
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12" style="display: flex;align-items: center;justify-content: center">
+                                    <button id="closePopup" class="reply-form__btn thm-btn" type="submit" >
+                                        <span >Hemen Başvur</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--            <div class="col-lg-4" style="margin-top: 150px">-->
 <!--                <div class="sidebar">-->
 <!--                    <div class="sidebar__single sidebar__post" >-->
 <!--                        <img src="img/kobasis/kobasis-02.png" width="350px">-->
