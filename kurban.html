@@ -175,9 +175,7 @@
             font-size: 16px;
             line-height: 34px;
         }
-        .share-block {
 
-        }
         .blog-details .share-block .social-block {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1282,12 +1280,50 @@
                 width: 100%;
             }
             .foto img{
+                padding: 20px;
                 width: 100%;
             }
+            .kurban-video img{
+                width: 100%;
+            }
+            .kobasis-header{
+                width: 100%;
+            }
+            .sartlar{
+               padding: 20px;
+            }
+            .blog-one__text{
+                padding: 20px;
+            }
+            .popup-content{
+                height: 500px;
+                margin: auto;
+                width: 300px;
+                margin-bottom: 30px;
+            }
+
         }
-        @media (max-width: 991.98px){
+        @media (max-width: 992px){
             .kurban-yol img{
                 width: 100%;
+            }
+            .foto img{
+                width: 100%;
+            }
+            .kurban-video img{
+                width: 100%;
+            }
+            .popup-content{
+                height: 500px;
+                margin: auto;
+                width: 300px;
+                margin-bottom: 30px;
+            }
+            .sartlar{
+                padding: 20px;
+            }
+            .blog-one__text{
+                padding: 20px;
             }
         }
     </style>
@@ -1372,12 +1408,7 @@
                     </div>
                     <div class="container  kbs-road-map ">
                         <div class="kobasis-header col-12">
-                            <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px ;padding-right: 30px">  İTT  <span class="kobasis">KURBAN VİDEO </span>
-                                <br>
-                                <div style="display: flex ; align-items: center; justify-content: end">
-                                    <a style="font-size: 24px;  margin-top: 20px ;margin-right: 10px">Kurban Yönetim Sistemi</a>
-                                </div>
-                            </h1>
+                          <img src="logo-yazılı/ürün%20Logoları_yazılı-03.svg" style="width: 300px">
                         </div>
                     </div>
                     <div class="kurban-yol" >
@@ -1400,11 +1431,8 @@
                     </div>
                     <div class="blog-one__content" style="border-top-left-radius: 15px;border-top-right-radius: 15px">
                         <div class="kobasis-header">
-                            <h1  class="blog-one__title " style="color: #34B1C4;font-size: 50px; font-weight: bold;height: 25px;padding-right: 30px">  İTT  <span class="kobasis">KURBAN VİDEO</span>
-                            </h1>
+                            <img src="logo-yazısız/ürün%20Logoları_yazılsız-03.svg" style="width: 300px ; margin-right: 30px">
                         </div>
-
-                        <a class="row explanation"  style="color: #34B1C4 ;font-size: 17px; font-weight: bold; padding-left: 155px; top: 0; height: 50px"></a>
 
                         <div class="title-line">
 
@@ -1436,7 +1464,7 @@
                             <span style="color: #0b0b0b;font-size: 19px ">Video Yönetimi:</span>
                             Sistem ,sahadan gönderilen  kurban videolarını, metin okunaklı olduğu sürece kolaylıkla analiz edebilir. bu sayade geri bildirim olarak hissedarlara gönderilecek video kayıtlarını otomatik olarak sınıflandırabilirsiniz. Kurban kesim videoları üzerindeki istenmenyen kısımlarını kesip arzu ettiğiniz şekilde düzenleyebilirsiniz. Çevrimiçi olarak video düzenleyen diğer kullanıcıların izinlerini devre dışı bırakabilir ve dilediğiniz zaman tekrar düzenleme yapmalarına izin verebilirsiniz.
                             <div class="">
-                                <div class="w-100 " style="display: flex;align-items: center;justify-content: center">
+                                <div class="kurban-video w-100 " style="display: flex;align-items: center;justify-content: center">
                                     <img  src="img/kurban/video-01.jpg" width="400" >
                                 </div>
                                 <span style="color: #0b0b0b;font-size: 19px ">Ayrıntılı Raporlama:</span>
@@ -1468,76 +1496,75 @@
                         </p>
                     </div>
                 </div>
+                <div class="share-block">
 
-            </div>
-            <div class="share-block">
+                    <div>
+                        <button  class="reply-form__btn thm-btn" type="submit">
+                            <span>Tanıtım Video</span>
+                        </button>
+                    </div>
 
-                <div>
-                    <button  class="reply-form__btn thm-btn" type="submit">
-                        <span>Tanıtım Video</span>
-                    </button>
-                </div>
+                    <div class="video">
+                        <button  class="reply-form__btn thm-btn" type="submit">
+                            <span>Tutorial Video</span>
+                        </button>
+                    </div>
 
-                <div class="video">
-                    <button  class="reply-form__btn thm-btn" type="submit">
-                        <span>Tutorial Video</span>
-                    </button>
-                </div>
+                    <div class="video">
+                        <button class="reply-form__btn thm-btn" id="demoBtn" type="button">
+                            <span>Demo İste</span>
+                        </button>
+                    </div>
 
-                <div class="video">
-                    <button class="reply-form__btn thm-btn" id="demoBtn" type="button">
-                        <span>Demo İste</span>
-                    </button>
-                </div>
+                    <div style="">
+                        <div class="popup mt-5" id="demoPopup">
+                            <div class="popup-content">
+                                <!-- Popup içeriği buraya eklenecek -->
+                                <div class=" w-100">
+                                    <h4 style="margin-bottom: 40px; margin-top: 20px">DEMO İSTE</h4>
+                                    <div class="">
+                                        <input name="name" id="name" required type="text" placeholder="AdıSoyad" class="reply-form__field" />
+                                    </div>
+                                    <div class="">
+                                        <input name="email" id="email" required type="text" placeholder="E-Posta " class="reply-form__field" />
+                                        <input name="phone" id="phone" required type="text" placeholder="Telefon No" class="reply-form__field" />
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center mb-5 mt-4  " >
 
-                <div style="">
-                    <div class="popup mt-5" id="demoPopup">
-                        <div class="popup-content">
-                            <!-- Popup içeriği buraya eklenecek -->
-                            <div class=" w-100">
-                                <h4 style="margin-bottom: 40px; margin-top: 20px">DEMO İSTE</h4>
-                                <div class="">
-                                    <input name="name" id="name" required type="text" placeholder="AdıSoyad" class="reply-form__field" />
-                                </div>
-                                <div class="">
-                                    <input name="email" id="email" required type="text" placeholder="E-Posta " class="reply-form__field" />
-                                    <input name="phone" id="phone" required type="text" placeholder="Telefon No" class="reply-form__field" />
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-5 mt-4  " >
+                                        <div  class="w-50 flex-column" style="">
+                                            <label class="container">AİD365
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">KOBASİS
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">ABASİS
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
 
-                                    <div  class="w-50 flex-column" style="">
-                                        <label class="container">AİD365
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">KOBASİS
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">ABASİS
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
+                                        </div>
+                                        <div class="w-50 flex-column" style="">
+                                            <label class="container">KURBAN VİDEO
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">İTT-SAR
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">
+                                            </label>
+                                        </div>
 
                                     </div>
-                                    <div class="w-50 flex-column" style="">
-                                        <label class="container">KURBAN VİDEO
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">İTT-SAR
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">
-                                        </label>
+                                    <div class="col-lg-12" style="display: flex;align-items: center;justify-content: center">
+                                        <button id="closePopup" class="reply-form__btn thm-btn" type="submit" >
+                                            <span >Hemen Başvur</span>
+                                        </button>
                                     </div>
-
-                                </div>
-                                <div class="col-lg-12" style="display: flex;align-items: center;justify-content: center">
-                                    <button id="closePopup" class="reply-form__btn thm-btn" type="submit" >
-                                        <span >Hemen Başvur</span>
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1545,13 +1572,7 @@
                 </div>
             </div>
 
-            <!--            <div class="col-lg-4" style="margin-top: 150px">-->
-<!--                <div class="sidebar">-->
-<!--                    <div class="sidebar__single sidebar__post" >-->
-<!--                        <img src="img/kobasis/kobasis-02.png" width="350px">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+
         </div>
     </div>
 </section>

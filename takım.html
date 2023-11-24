@@ -1020,6 +1020,142 @@
             padding: 1rem;
         }
 
+        @media screen and (max-width: 768px) {
+            .takım{
+                width: 100%;
+            }
+            .ekip {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: 20px;
+
+
+            }
+            .user{
+                width: 300px;
+                margin-top: 10px;
+            }
+            .userx{
+                display: none;
+            }
+            .title{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+        }
+        @media (max-width: 992px) {
+            .takım{
+                width: 100%;
+            }
+            .ekip {
+                width: 100%;
+                display: block;
+                margin: auto;
+                padding: 20px;
+
+            }
+            .title{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                font-size:35px ;
+            }
+            .userx{
+                display: none;
+            }
+            .columnx{
+                display: none;
+            }
+
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 27%;
+            padding: 0 10px;
+
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+            .columnx{
+                display: none;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .h5 {
+            margin-top: 20px;
+        }
+        /*@media (max-width: 1288px){*/
+        /*    .takım{*/
+        /*        width: 100%;*/
+        /*    }*/
+        /*    .ekip {*/
+        /*        width: 100%;*/
+        /*        display: flex;*/
+        /*        margin: auto;*/
+        /*        padding: 30px;*/
+
+        /*    }*/
+        /*    .title{*/
+        /*        display: flex;*/
+        /*        align-items: center;*/
+        /*        flex-direction: column;*/
+        /*        font-size:35px ;*/
+        /*    }*/
+        /*    .userx{*/
+        /*        display: none;*/
+        /*    }*/
+        /*}*/
+        .isim{
+            margin-top: 10px;
+        }
+
+
+
 
 
     </style>
@@ -1115,7 +1251,7 @@
 <!--</section>-->
 
 <section class=" takım " style="margin-top: 200px ;margin-bottom: 200px">
-    <div class="takım-header">
+    <div class="takım-header container">
         <h1 class="title">Ekibimizle Tanışın</h1>
         <div class="separator_wrapper">
             <div class="çizgi"></div>
@@ -1124,60 +1260,86 @@
         </div>
         <p class="expenses">Etik yazılım geliştirmeye, zanaatkârlığa, profesyonelliğe değer veriyor, çevik ve yalın bir zihniyetle yazılım geliştirme kültürüne ve sürekli hizmete inanıyoruz.</p>
     </div>
-    <div class="ekip">
-        <div class="user">
-         <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-22%2011.41.03.jpg" style="border-radius: 90px">
-         <h5 class="" style="font-size: 20px; line-height:28px ">Muhittin Uzun</h5>
-         <p class="" style="text-align: center; font-size: 20px">Kurucu</p>
-     </div>
-        <div class="user">
-            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/bünyadahmedlifotoğraf.jpg" style="border-radius: 90px">
-            <h5 class="" style="font-size: 20px; line-height:28px ">Bunyad Ahmadli</h5>
-            <p class="" style="text-align: center; font-size: 20px">Takım Lideri</p>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img alt="Muhittin Uzun" width="120"  height="120" src="Ekip/2023-11-22%2011.41.03.jpg" style="border-radius: 90px">
+                <h5 class="isim" style="font-size: 20px; line-height:28px ">Muhittin Uzun</h5>
+                <p class="" style="text-align: center; font-size: 20px">Kurucu</p>
+            </div>
         </div>
-        <div class="user">
-            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-22%2011.12.14.jpg" style="border-radius: 90px">
-            <h5 class="" style="font-size: 20px; line-height:28px ">Arif Darıyemez</h5>
-            <p class="" style="text-align: center; font-size: 20px">Endüstri Mühendisi</p>
+
+        <div class="column">
+            <div class="card">
+                <img alt="Bünyad Ahmedli" width="120"  height="120" src="Ekip/bünyadahmedlifotoğraf.jpg" style="border-radius: 90px">
+                <h5 class="isim" style="font-size: 20px; line-height:28px ">Bünyad Ahmadli</h5>
+                <p class="" style="text-align: center; font-size: 20px">Takım Lideri</p>
+            </div>
+        </div>
+
+        <div class="column">
+                <div class="card">
+                    <img alt="Arif Darıyemez" width="120"  height="120" src="Ekip/2023-11-22%2011.12.14.jpg" style="border-radius: 90px">
+                    <h5 class="isim" style="font-size: 20px; line-height:28px ">Arif Darıyemez</h5>
+                    <p class="" style="text-align: center; font-size: 20px">Endüstri Mühendisi</p>
+                </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/IMG_0192.jpg" style="border-radius: 90px">
+                <h5 class="" style="font-size: 20px; line-height:28px ">Kadir Kılıç</h5>
+                <p class="" style="text-align: center; font-size: 20px">Front-End Developer</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/mustafaGünayFotoğraf.jpg" style="border-radius: 90px">
+                <h5 class="" style="font-size: 20px; line-height:28px ">Mustafa Günay</h5>
+                <p class="" style="text-align: center; font-size: 20px">Front-End Developer</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-2212.46.29.jpg" style="border-radius: 90px">
+                <h5 class="" style="font-size: 20px; line-height:28px ">Ali Ay</h5>
+                <p class="" style="text-align: center; font-size: 20px">Front-End Developer</p>
+            </div>
         </div>
 
     </div>
-    <div class="ekip">
-        <div class="user">
-            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/IMG_0192.jpg" style="border-radius: 90px">
-            <h5 class="" style="font-size: 20px; line-height:28px ">Kadir Kılıç</h5>
-            <p class="" style="text-align: center; font-size: 20px">Front-End Developer</p>
-        </div>
-        <div class="user">
-            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/mustafaGünayFotoğraf.jpg" style="border-radius: 90px">
-            <h5 class="" style="font-size: 20px; line-height:28px ">Mustafa Günay</h5>
-            <p class="" style="text-align: center; font-size: 20px">Front-End Developer</p>
-        </div>
-        <div class="user">
-            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-2212.46.29.jpg" style="border-radius: 90px">
-            <h5 class="" style="font-size: 20px; line-height:28px ">Ali Ay</h5>
-            <p class="" style="text-align: center; font-size: 20px">Front-End Developer</p>
-        </div>
-    </div>
-    <div class="ekip">
-        <div class="user">
-            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/yusuferkandarıyemezfotoğraf.jpg" style="border-radius: 90px">
-            <h5 class="" style="font-size: 20px; line-height:28px ">Yusuf Darıyemez </h5>
-            <p class="" style="text-align: center; font-size: 20px">Backend Developer</p>
-        </div>
-        <div class="user">
-            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-2212.44.43.jpg" style="border-radius: 90px">
-            <h5 class="" style="font-size: 20px; line-height:28px ">Hasan Aygün</h5>
-            <p class="" style="text-align: center; font-size: 20px">Backend Developer</p>
-        </div>
-        <div class="userx">
-<!--            <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-2212.44.43.jpg" style="border-radius: 90px">-->
-<!--            <h5 class="" style="font-size: 20px; line-height:28px ">Hasan Aygün</h5>-->
-<!--            <p class="" style="text-align: center; font-size: 20px">Backend Developer</p>-->
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/yusuferkandarıyemezfotoğraf.jpg" style="border-radius: 90px">
+                <h5 class="" style="font-size: 20px; line-height:28px ">Yusuf Darıyemez </h5>
+                <p class="" style="text-align: center; font-size: 20px">Backend Developer</p>
+            </div>
         </div>
 
+        <div class="column">
+            <div class="card">
+                <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-2212.44.43.jpg" style="border-radius: 90px">
+                <h5 class="" style="font-size: 20px; line-height:28px ">Hasan Aygün</h5>
+                <p class="" style="text-align: center; font-size: 20px">Backend Developer</p>
+            </div>
+        </div>
+
+        <div class="column">
+<!--            <div class="card">-->
+<!--                <img alt="ARif Darıyemez" width="120"  height="120" src="Ekip/2023-11-2212.46.29.jpg" style="border-radius: 90px">-->
+<!--                <h5 class="" style="font-size: 20px; line-height:28px ">Ali Ay</h5>-->
+<!--                <p class="" style="text-align: center; font-size: 20px">Front-End Developer</p>-->
+<!--            </div>-->
+        </div>
 
     </div>
+
 </section>
 
 <!-- ==== Start Footer ==== -->
