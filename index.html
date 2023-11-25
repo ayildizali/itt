@@ -39,13 +39,6 @@
             body {
                 height: 100%;
             }
-            .calismalarimiz__container {
-                display: flex;
-                align-items: center;
-                border-radius: 20px;
-                border: 1px solid #eeeded;
-                box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-            }
             .calismalarimiz__container ul{
                 padding: 15px 0 15px 0;
 
@@ -621,42 +614,11 @@
                 display: none;
             }
 
-            .stricked-menu {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 999;
-                background-color: #fff;
-                -webkit-box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.06);
-                box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.06);
-                opacity: 0;
-                -webkit-animation: fadeInDown .95s ease-in-out 0s 1 normal none running;
-                animation: fadeInDown .95s ease-in-out 0s 1 normal none running;
-                -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
-                transition: all .3s cubic-bezier(.645,.045,.355,1);
-            }
             .stricked-menu ul.navigation-box > li {
                 padding-top: 18px;
                 padding-bottom: 18px;
             }
-            .stricked-menu.stricky-fixed {
-                opacity: 1;
-                -webkit-transform: translateY(0%);
-                transform: translateY(0%);
-            }
 
-            .site-header {
-                position: relative;
-            }
-
-            .site-header__header-one {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 91;
-            }
             .site-header__header-one .header-navigation .main-navigation {
                 padding-right: 0;
                 text-align: center;
@@ -698,110 +660,10 @@
             .banner-one__title span {
                 font-weight: 500;
             }
-
-            .banner-one__btn {
-                padding: 18px 55px;
-            }
-            .banner-one__moc {
-                position: absolute;
-                bottom: 7%;
-                right: -30px;
-            }
-            .banner-one__moc:before {
-                content: '';
-                width: 639px;
-                height: 639px;
-                background-image: linear-gradient(40deg, #ff43c0 0%, #ffa95c 100%);
-                -webkit-box-shadow: 0px 20px 60px 0px rgba(244, 151, 190, 0.8);
-                box-shadow: 0px 20px 60px 0px rgba(244, 151, 190, 0.8);
-                border-radius: 50%;
-                position: absolute;
-                top: -14%;
-                left: -24%;
-                -webkit-transform-origin: center bottom;
-                transform-origin: center bottom;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                -webkit-animation-name: bounce;
-                animation-name: bounce;
-                -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
-                -webkit-animation-duration: 5s;
-                animation-duration: 5s;
-                -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-            }
             .banner-one__moc img {
                 position: relative;
                 -webkit-animation: featureImgBounce 5s ease-in-out 0s infinite alternate;
                 animation: featureImgBounce 5s ease-in-out 0s infinite alternate;
-            }
-
-            [class*=banner-one__shape-] {
-                position: absolute;
-                border-radius: 50%;
-                -webkit-animation-name: bubbleMover;
-                animation-name: bubbleMover;
-                -webkit-animation-timing-function: linear;
-                animation-timing-function: linear;
-                -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-            }
-
-            .banner-one__shape-1 {
-                background-image: linear-gradient(40deg, #0db8ff 0%, #f332ff 100%);
-                -webkit-box-shadow: 0px 20px 60px 0px rgba(141, 142, 255, 0.8);
-                box-shadow: 0px 20px 60px 0px rgba(141, 142, 255, 0.8);
-                width: 143px;
-                height: 143px;
-                top: 5%;
-                left: 3%;
-                -webkit-animation-duration: 8s;
-                animation-duration: 8s;
-                -webkit-perspective: 150px;
-                perspective: 150px;
-            }
-
-            .banner-one__shape-2 {
-                background-image: linear-gradient(40deg, #39aeff 0%, #3cff53 100%);
-                -webkit-box-shadow: 0px 20px 40px 0px rgba(58, 212, 173, 0.8);
-                box-shadow: 0px 20px 40px 0px rgba(58, 212, 173, 0.8);
-                width: 85px;
-                height: 85px;
-                top: 12%;
-                left: 37%;
-                -webkit-animation-duration: 10s;
-                animation-duration: 10s;
-                -webkit-perspective: 85px;
-                perspective: 85px;
-            }
-
-            .banner-one__shape-3 {
-                background-image: linear-gradient(40deg, #ff43c0 0%, #ffa95c 100%);
-                -webkit-box-shadow: 0px 20px 40px 0px rgba(255, 118, 142, 0.8);
-                box-shadow: 0px 20px 40px 0px rgba(255, 118, 142, 0.8);
-                width: 85px;
-                height: 85px;
-                bottom: 12%;
-                left: 6%;
-                -webkit-animation-duration: 7s;
-                animation-duration: 7s;
-                -webkit-perspective: 85px;
-                perspective: 85px;
-            }
-
-            .banner-one__shape-4 {
-                background-image: linear-gradient(40deg, #ff703e 0%, #ffec4e 100%);
-                -webkit-box-shadow: 0px 20px 40px 0px rgba(255, 178, 71, 0.8);
-                box-shadow: 0px 20px 40px 0px rgba(255, 178, 71, 0.8);
-                width: 85px;
-                height: 85px;
-                top: 20%;
-                right: 4%;
-                -webkit-animation-duration: 12s;
-                animation-duration: 12s;
-                -webkit-perspective: 85px;
-                perspective: 85px;
             }
 
             @-webkit-keyframes bubbleMover {
@@ -1301,21 +1163,6 @@
             /*
             * 6. footer styles
             */
-            .site-footer {
-                position: relative;
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                overflow: hidden;
-                background-color: #192b3c;
-                -webkit-box-shadow: 0px -1px 0px 0px #efefef;
-                box-shadow: 0px -1px 0px 0px #efefef;
-            }
-
-
-            .site-footer__bottom {
-                background-color: #fff9ff;
-            }
             .site-footer__bottom .inner-container {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -1331,12 +1178,6 @@
                 padding-bottom: 44px;
             }
 
-            .site-footer__copy {
-                font-size: 16px;
-                font-weight: 400;
-                color: #74727a;
-                margin: 0;
-            }
             .site-footer__copy a {
                 color: #ff4eb5;
                 -webkit-transition: all .4s ease;
@@ -1346,14 +1187,6 @@
                 color: #fff;
             }
 
-            .site-footer__social {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-            }
             .site-footer__social a {
                 width: 56px;
                 height: 56px;
@@ -1374,40 +1207,6 @@
                 }
             }
 
-            .footer-widget__title {
-                font-size: 18px;
-                font-weight: 500;
-                color: #FFFFFF;
-               width: 300px;
-                line-height: 1em;
-                margin-bottom: 40px;
-            }
-            .site-footer{
-                position: relative;
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                overflow: hidden;
-                background-color: #192b3c;
-                -webkit-box-shadow: 0px -1px 0px 0px #efefef;
-                box-shadow: 0px -1px 0px 0px #efefef;
-            }
-            .site-footer__upper {
-                padding-top: 120px;
-                padding-bottom: 120px;
-            }
-            .footer-widget__title {
-                font-size: 18px;
-                font-weight: 500;
-                color: #FFFFFF;
-                width: 300px;
-                line-height: 1em;
-                margin-bottom: 40px;
-            }
-            .footer-widget__links {
-                margin: 0;
-                margin-top: -5px;
-            }
             .footer-widget__links li {
                 line-height: 1em;
             }
@@ -1425,14 +1224,6 @@
                 color: #34B1C4;
             }
 
-
-            .footer-widget__contact {
-                font-size: 16px;
-                font-weight: 400;
-                color: #74727a;
-                margin: 0;
-                line-height: 30px;
-            }
             .footer-widget__contact a {
                 color: inherit;
                 -webkit-transition: all .4s ease;
@@ -1444,48 +1235,12 @@
                 margin-top: 15px;
             }
 
-            .footer-widget__mailchimp {
-                padding-left: 70px;
-            }
 
-            .footer-widget__logo {
-                /*margin-bottom: 40px;*/
-            }
 
             /*
             * 7. inner-banner styles
             */
-            .inner-banner {
-                position: relative;
-                background-color: #fff;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: top center;
-                padding-top: 245px;
-                padding-bottom: 120px;
-            }
-            .inner-banner__title {
-                text-align: center;
-                line-height: 1em;
-                font-size: 46px;
-                font-weight: 400;
-                color: #fff;
-                margin: 0;
-                margin-top: 10px;
-            }
 
-            .thm-breadcrumb {
-                margin: 0;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-            }
             .thm-breadcrumb li {
                 font-size: 18px;
                 font-weight: 400;
@@ -1508,14 +1263,6 @@
             /*
             * 8. video styles
             */
-            .video-one {
-                position: relative;
-            }
-            .video-one__bg {
-                position: absolute;
-                bottom: 0%;
-                left: 0;
-            }
             .video-one .container {
                 position: relative;
                 padding: 15px;
@@ -1524,10 +1271,7 @@
                 border-radius: 7px;
                 z-index: 10;
             }
-            .video-one__box {
-                position: relative;
-                border-radius: 7px;
-            }
+
             .video-one__box > img {
                 width: 100%;
                 border-radius: 7px;
@@ -1535,49 +1279,13 @@
             .video-one__box:hover .video-one__content {
                 background-color: rgba(42, 40, 51, 0.2);
             }
-            .video-one__content {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(42, 40, 51, 0.6);
-                top: 0;
-                left: 0;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                text-align: center;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                -webkit-transition: all .4s ease;
-                transition: all .4s ease;
-                border-radius: 7px;
-            }
-
             .video-one__btn i {
                 font-size: 24px;
                 color: #fff;
                 line-height: 106px;
             }
-            .video-one__btn:hover {
-                background-position: right center;
-            }
             .video-one__btn:hover i {
                 color: #fff;
-            }
-            .video-one__title {
-                font-size: 50px;
-                font-weight: 400;
-                color: #fff;
-                margin: 0;
-                margin-top: 20px;
             }
             .video-one__title span {
                 font-weight: 700;
@@ -2158,9 +1866,7 @@
                             <a class="nav-link" href="#slider">Anasayfa <span class="sr-only">(current)</span></a>
                         </li>
 
-<!--                        <li class="nav-item ">-->
-<!--                            <a class="nav-link" href="#hizmetler">Hizmetler</a>-->
-<!--                        </li>-->
+
                         <li class="nav-item mt-2">
                             <div class="topnav  " id="myTopnavw">
                                 <div class="dropdown  nav-item" style="display: block">
@@ -2186,12 +1892,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="iletişim.html">İletişim</a>
                         </li>
-<!--                        <li class="nav-item">-->
-<!--                            <a class="nav-link" href="mailto:info@ittyazilim.com">-->
-<!--                                Bize Ulaşın-->
-<!--                                <i class="ml-1 fa fa-envelope" aria-hidden="true"></i>-->
-<!--                            </a>-->
-<!--                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -2616,12 +2316,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-<!--                        <h2 class="section-title">Özelliklerimiz</h2>-->
-<!--                        <div class="separator_wrapper">-->
-<!--                            <div class="çizgi"></div>-->
-<!--                            <img class="star" src="img/star-24.ico">-->
-<!--                            <div class="çizgi2"></div>-->
-<!--                        </div>-->
                         <p class="section-subtitle">
                             ITT Teknoloji olarak, şeffaf, kullanıcı dostu, güvenilir ve güvenli yazılım çözümleri sunarak <br> sivil toplum kuruluşlarına değer katıyoruz. </p>
                     </div>
