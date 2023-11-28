@@ -1098,6 +1098,50 @@
                 margin-top: 10px;
             }
         }
+        /* The Modal (background) */
+        .modal {
+
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 450px;
+            height: 650px;
+        }
+
+        /* The Close Button */
+        .close {
+            width: 410px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
 
     </style>
@@ -1105,7 +1149,6 @@
 <body>
 <!-- Page Loading -->
 <div class="se-pre-con"></div>
-
 <!-- ==== Start Navbar ==== -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dar fixed-top">
     <div class="container">
@@ -1192,7 +1235,6 @@
         </div>
     </div>
 </section>
-
 <section class="road-map" style="margin-top: 200px">
     <div class="container ">
         <div class="col-lg-10">
@@ -1279,28 +1321,37 @@
                 </div>
                 <div class="share-block">
 
-                    <div>
-                        <button  class="reply-form__btn thm-btn" type="submit">
-                            <span>Tanıtım Video</span>
-                        </button>
-                    </div>
+<!--                    <div>-->
+<!--                        <button  class="reply-form__btn thm-btn" type="submit">-->
+<!--                            <span>Tanıtım Video</span>-->
+<!--                        </button>-->
+<!--                    </div>-->
+
+<!--                    <div class="video">-->
+<!--                        <button  class="reply-form__btn thm-btn" type="submit">-->
+<!--                            <span>Tutorial Video</span>-->
+<!--                        </button>-->
+<!--                    </div>-->
 
                     <div class="video">
-                        <button  class="reply-form__btn thm-btn" type="submit">
-                            <span>Tutorial Video</span>
-                        </button>
-                    </div>
-
-                    <div class="video">
-                        <button class="reply-form__btn thm-btn" id="demoBtn" type="button">
+                        <button class="reply-form__btn thm-btn" id="myBtn" type="button">
                             <span>Demo İste</span>
                         </button>
                     </div>
-
                     <div style="">
                         <div class="popup mt-5" id="demoPopup">
                             <div class="popup-content">
                                 <!-- Popup içeriği buraya eklenecek -->
+
+                            </div>
+                        </div>
+                        <!-- Trigger/Open The Modal -->
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
                                 <div class=" w-100">
                                     <h4 style="margin-bottom: 40px; margin-top: 20px">DEMO İSTE</h4>
                                     <div class="">
@@ -1339,11 +1390,10 @@
                                             <label class="container">
                                             </label>
                                         </div>
-
                                     </div>
                                     <div class="col-lg-12" style="display: flex;align-items: center;justify-content: center">
                                         <button id="closePopup" class="reply-form__btn thm-btn" type="submit" >
-                                            <span >Hemen Başvur</span>
+                                            <span class="" >Hemen Başvur</span>
                                         </button>
                                     </div>
                                 </div>
@@ -1438,17 +1488,31 @@
 <!-- Main Js -->
 <script src="js/main.js"></script>
 <script>
-    document.getElementById("demoBtn").addEventListener("click", function() {
-        document.getElementById("demoPopup").style.display = "block";
-        document.body.style.overflow = "hidden"; // Sayfanın arka planını kaydırmayı engelle
-        document.querySelector(".overlay").style.display = "block";
-    });
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-    document.getElementById("closePopup").addEventListener("click", function() {
-        document.getElementById("demoPopup").style.display = "none";
-        document.body.style.overflow = "auto"; // Sayfanın arka planını tekrar kaydırabilir yap
-        document.querySelector(".overlay").style.display = "none";
-    });
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
 </body>
 </html>
